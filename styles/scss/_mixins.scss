@@ -1,0 +1,15 @@
+@mixin flex-row($wrap, $justify, $align) {
+    // write the css here
+    display: flex;
+    flex-flow: row $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex-column($wrap, $justify, $align) {
+    // write the css here
+    display: flex;
+    flex-flow: column $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}

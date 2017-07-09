@@ -1,3 +1,51 @@
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("../../Roboto Fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("../../Roboto Fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../../Roboto Fonts/Roboto-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    background-image: url(http://www.unitedmedicareadvisors.com/wp-content/uploads/2016/06/shattered.png);
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
 body {
-    color: red;
+    font-family: "Roboto-Light";
+    overflow-x: hidden;
+    max-width: $main-max-width;
+    margin: 0 auto;
+    background: $main-background-color;
+    color: $font-color;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }

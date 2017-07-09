@@ -1,7 +1,8 @@
 
 // Abstracts
 @import
-  './variables';
+  './variables',
+  "./mixins";
 
 // Base styles
 @import
@@ -10,5 +11,5 @@
 // Components
 @import
   './header',
-  './sections',
+  './main-content',
   './footer';
