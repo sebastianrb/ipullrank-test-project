@@ -26,7 +26,7 @@ html {
 }
 
 body {
-    font-family: "Roboto-Light";
+    font-family: "Roboto-Regular";
     overflow-x: hidden;
     max-width: $main-max-width;
     margin: 0 auto;
@@ -48,4 +48,8 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+a {
+    text-decoration: none;
 }

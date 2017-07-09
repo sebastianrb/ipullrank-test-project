@@ -21,7 +21,7 @@ html {
   background-size: cover; }
 
 body {
-  font-family: "Roboto-Light";
+  font-family: "Roboto-Regular";
   overflow-x: hidden;
   max-width: 1100px;
   margin: 0 auto;
@@ -41,6 +41,9 @@ ul {
   padding: 0;
   margin: 0; }
 
+a {
+  text-decoration: none; }
+
 .header {
   height: 550px;
   position: relative; }
@@ -48,7 +51,9 @@ ul {
     position: fixed;
     top: 0;
     width: 100%;
-    max-width: 1100px; }
+    max-width: 1100px;
+    opacity: 1;
+    z-index: 1000; }
   .header .header__sticky-nav-content {
     height: 90px;
     position: fixed;
@@ -61,7 +66,8 @@ ul {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.4); }
   .header .header__sticky-nav-icon {
     width: 15%;
     min-width: 120px;
@@ -152,9 +158,44 @@ ul {
     opacity: .8;
     font-family: Roboto-Regular; }
 
-footer {
+.main-container {
+  overflow: auto;
+  background: white; }
+  .main-container .main-content {
+    width: 70%;
+    float: left;
+    padding: 10px; }
+  .main-container .main-sidebar {
+    float: right;
+    width: 25%;
+    padding: 10px; }
+
+.footer-alerts {
   color: #e3e3e3;
   background-color: #454545;
   width: 100%;
-  padding: 20px;
+  padding: 50px 40px;
   height: auto; }
+  .footer-alerts .footer__paragraph {
+    margin: 20px 0;
+    font-size: .9em;
+    line-height: 25px; }
+  .footer-alerts .footer__link {
+    color: #2eb1ff; }
+
+footer {
+  background: black;
+  height: 100px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: lighter;
+  margin-bottom: 20px;
+  font-family: Roboto-Light; }
+  footer .footer__paragraph {
+    opacity: .7;
+    font-size: .9em; }

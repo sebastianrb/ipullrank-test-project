@@ -1,7 +1,35 @@
-footer {
+.footer-alerts {
     color: $footer-color;
     background-color: $footer-background-color;
     width: 100%;
-    padding: 20px;
+    padding: 50px 40px;
     height: auto;
+
+    .footer__paragraph {
+        margin: 20px 0;
+        font-size: .9em;
+        line-height: 25px;
+    }
+
+    .footer__link {
+        color: $accent;
+    }
+
+}
+
+footer {
+    background: black;
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    @include flex-column(nowrap, center, center);
+    color: white;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    font-family: Roboto-Light;
+
+    .footer__paragraph {
+        opacity: .7;
+        font-size: .9em;
+    }
 }

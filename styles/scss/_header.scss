@@ -9,6 +9,8 @@
         top: 0;
         width: 100%;
         max-width: $main-max-width;
+        opacity: 1;
+        z-index: 1000;
     }
 
     .header__sticky-nav-content {
@@ -21,6 +23,7 @@
         transition: top .4s;
         padding: 10px 40px;
         @include flex-row(nowrap, space-between, center);
+        box-shadow: 0 4px 12px -4px rgba(0,0,0,.40);
     }
 
     .header__sticky-nav-icon {

@@ -1,0 +1,16 @@
+.main-container {
+    overflow: auto;
+    background: white;
+
+    .main-content {
+        width: 70%;
+        float: left;
+        padding: 10px;
+    }
+
+    .main-sidebar {
+        float: right;
+        width: 25%;
+        padding: 10px;
+    }
+}
