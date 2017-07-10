@@ -1,6 +1,22 @@
 .header {
-    height: 550px;
+    height: auto;
     position: relative;
+    padding-top: $sticky-nav-height + 50;
+
+    //breadcrumb text
+    .header__breadcrumb {
+        width: 93%;
+        margin: 20px auto;
+        font-size: 1.1em;
+    }
+
+    .header__breadcrumb-text > a {
+        color: $accent;
+        transition: all .1s;
+        &:hover {
+            color: $red-accent;
+        }
+    }
 
     //sticky nav styles
 
@@ -27,7 +43,7 @@
     }
 
     .header__sticky-nav-icon {
-        width: 15%;
+        width: 140px;
         min-width: 120px;
         height: auto;
     }
@@ -100,7 +116,7 @@
     }
 
     .social-icon {
-        margin-left: 15px;
+        margin-left: 20px;
         font-size: 1.2em;
         cursor: pointer;
         transition: color .2s;
@@ -110,16 +126,23 @@
         }
     }
 
+    .header__phone-bar-text,
+    .header__social-bar {
+        opacity: .9;
+        font-size: .95em;
+    }
+
     //main header content styles
 
     .header__content {
-        padding-top: $sticky-nav-height;
         background-image: url("../images/banner-image.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50%;
-        height: 100%;
+        height: 500px;
         @include flex-column(nowrap, center, center);
+        width: 93%;
+        margin: 0 auto;
     }
 
     .header__title {
