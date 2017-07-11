@@ -1,0 +1,62 @@
+.section-content__text-image-box {
+    overflow: hidden;
+    margin: 20px 0;
+
+    .section-content__standard-text {
+        margin: 0 0 30px;
+    }
+
+    .section-content__standard-text:last-child {
+        margin: 0;
+    }
+
+    .section-content__text-image-box-text-column {
+        width: calc(100% - 340px);
+        float: left;
+
+    }
+
+    .section-content__text-image-box-image {
+        width: 320px;
+        float: right;
+        margin: 5px;
+    }
+}
+
+.section-content__blue-box {
+    padding: 15px 30px;
+    background: transparentize($accent, .7);
+    font-size: .9em;
+    margin: 0 0 10px;
+    line-height: $standard-line-height;
+}
+
+.section-content__section1-learn-more-box {
+    background: $orange-accent;
+    color: white;
+    @include flex-column(nowrap, center, center);
+    padding: 20px;
+}
+
+.section-content__section1-learn-more-box-caption {
+    font-size: 1.3em;
+    font-family: Roboto-Light;
+    margin: 0 0 15px;
+}
+
+.section-content__section1-learn-more-box-button {
+    padding: 5px 10px;
+    width: 200px;
+    background: white;
+    color: $orange-accent;
+    border-radius: $standard-border-radius;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    transition: $standard-transition;
+    cursor: pointer;
+
+    &:hover {
+        background: lighten($orange-accent, 40%);
+    }
+}

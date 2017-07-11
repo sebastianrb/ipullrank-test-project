@@ -12,24 +12,31 @@ $nav-bar-item-color: #444444;
 
 $accent: #2eb1ff;
 $gray-accent: rgba(211, 211, 211, 0.7);
+$red-accent: darken(#ef3936, 15%);
+$orange-accent: #f5a403;
+$light-blue-accent: transparentize($accent, .7);
 
-$red-accent: #ef3936;
+
 $google-color: #d50f25;
 $twitter-color: #0084b4;
 $facebook-color: #5d75af;
 $linkedin-color: #86888A;
 
 
+$table-light-blue: #155479;
+$table-dark-blue: #04394f;
+$table-dark-gray: #e7e8e8;
+$table-light-gray: #f0f1f1;
+
 //measurements
-$sticky-nav-height: 85px;
-
+$sticky-nav-height: 75px;
 $phone-bar-height: 40px;
-
-$main-max-width: 1100px;
+$main-max-width: 1150px;
+$article-width: 250px;
 
 
 //other
-
 $standard-border: 1px solid lightgray;
 $standard-border-radius: 4px;
 $standard-transition: all .2s;
+$standard-line-height: 25px;

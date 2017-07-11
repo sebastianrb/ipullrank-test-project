@@ -1,0 +1,25 @@
+.section-content__medicare-supplement-icons {
+    @include flex-row(wrap, center, center);
+}
+
+.section-content__medicare-supplement-icon {
+    margin: 20px 26px 45px;
+    @include flex-column(nowrap, center, center);
+    position: relative;
+
+    .section-content__medicare-supplement-icon-caption {
+        font-size: 1.3em;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    &::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 103%;
+        font-size: 1.2em;
+        text-align: center;
+        width: 150%;
+        letter-spacing: -1px;
+    }
+}

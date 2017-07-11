@@ -1,0 +1,71 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.section-content__medicare-costs-table {
+    th, td {
+        width: 150px;
+        text-align: center;
+    }
+
+    thead {
+        border-bottom: 10px solid $orange-accent;
+    }
+
+    thead {
+        tr {
+            color: white;
+            font-family: Roboto-Bold;
+        }
+        th {
+            padding: 10px 5px;
+        }
+
+        th:nth-child(odd) {
+            background: $table-light-blue;
+        }
+
+        th:nth-child(even) {
+            background: $table-dark-blue;
+        }
+    }
+
+    tbody {
+        tr {
+            height: 80px;
+
+            td:first-child {
+                color: white;
+            }
+            td:not(:first-child) {
+                padding: 5px 10px;
+                font-size: .9em;
+            }
+        }
+
+        tr:nth-child(even) {
+            td:nth-child(odd) {
+                background: lighten($table-light-gray, 5%);
+            }
+            td:nth-child(even) {
+                background: $table-light-gray;
+            }
+            td:first-child {
+                background: $table-light-blue;
+            }
+        }
+
+        tr:nth-child(odd) {
+            td:nth-child(odd) {
+                background: $table-light-gray;
+            }
+            td:nth-child(even) {
+                background: $table-dark-gray;
+            }
+            td:first-child {
+                background: $table-dark-blue;
+            }
+        }
+    }
+}

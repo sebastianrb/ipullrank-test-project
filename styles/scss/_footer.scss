@@ -4,6 +4,7 @@
     width: 100%;
     padding: 50px 40px;
     height: auto;
+    position: relative;
 
     .footer__paragraph {
         margin: 20px 0;
@@ -13,13 +14,18 @@
 
     .footer__link {
         color: $accent;
+        transition: $standard-transition;
+
+        &:hover {
+            color: $red-accent;
+        }
     }
 
 }
 
 footer {
     background: black;
-    height: 100px;
+    height: 90px;
     width: 100%;
     padding: 20px;
     @include flex-column(nowrap, center, center);
@@ -27,6 +33,7 @@ footer {
     font-weight: lighter;
     margin-bottom: 20px;
     font-family: Roboto-Light;
+    position: relative;
 
     .footer__paragraph {
         opacity: .7;

@@ -1,0 +1,188 @@
+//accordions
+.section-content__accordion {
+    width: 100%;
+    border: $standard-border;
+    margin-bottom: 10px;
+    min-width: 600px;
+}
+
+.section-content__accordion-content {
+    overflow: hidden;
+    transition: height .6s;
+}
+
+.section-content__accordion-header {
+    height: 75px;
+    width: 100%;
+    @include flex-row(nowrap, center, center);
+}
+
+.section-content__accordion-header-myth-box {
+    background: $table-dark-blue;
+    color: white;
+    flex: 1 1 auto;
+    max-width: 100px;
+    min-width: 100px;
+}
+
+.section-content__accordion-header-text {
+    background: $light-blue-accent;
+    color: $table-dark-blue;
+    width: calc(100% - 190px)
+}
+
+.section-content__accordion-header-expand-button {
+    background: $light-blue-accent;
+    padding: 10px;
+    @include flex-column(nowrap, center, center);
+    cursor: pointer;
+    max-width: 90px;
+    min-width: 90px;
+    transition: $standard-transition;
+
+    &:hover {
+        background: darken($light-blue-accent, 15%);
+    }
+}
+
+.section-content__accordion-header-myth-box,
+.section-content__accordion-header-expand-button {
+    height: 100%;
+    @include flex-column(wrap, center, center);
+}
+
+.section-content__accordion-header-text {
+    height: 100%;
+    @include flex-column(wrap, center, flex-start);
+    padding-left: 20px;
+}
+
+.section-content__accordion-header-myth-box-word,
+.section-content__accordion-header-fact-box-word {
+    font-size: 1.1em;
+}
+
+.section-content__accordion-header-myth-box-number,
+.section-content__accordion-header-fact-box-number {
+    font-size: 1.8em;
+}
+
+.section-content__accordion-header-expand-line-horizontal,
+.section-content__accordion-header-expand-line-vertical {
+    width: 20px;
+    height: 4px;
+    background: $accent;
+    position: absolute;
+    transition: $standard-transition;
+}
+
+.section-content__accordion-header-expand-line-vertical {
+    transform: rotateZ(90deg);
+}
+
+.section-content__accordion-content-left-column {
+    float: left;
+    width: 100px;
+    min-width: 100px;
+    height: 100%;
+    text-align: center;
+    color: darken($gray-accent, 20%);
+    margin-bottom: 20px;
+}
+
+.section-content__accordion-content-right-column {
+    float: right;
+    width: calc(100% - 100px);
+    min-height: 100px;
+    padding: 0 40px 30px 20px;
+    line-height: $standard-line-height;
+    font-family: Roboto-Light;
+}
+
+.red-span {
+    color: red;
+    font-family: Roboto-Bold;
+}
+
+.section-content__accordion-content-left-column,
+.section-content__accordion-content-right-column {
+    margin-top: 20px;
+}
+
+
+//table
+.section-content__medicare-costs-table--accordion {
+    margin: 20px 0 0;
+    font-family: Roboto-Bold;
+    th, td {
+        width: 150px;
+        text-align: center;
+    }
+
+    thead {
+        border-bottom: 10px solid $orange-accent;
+    }
+
+    thead {
+        tr {
+            color: white;
+            font-family: Roboto-Bold;
+        }
+        th {
+            padding: 10px 5px;
+        }
+
+        th:nth-child(even) {
+            background: $table-light-blue;
+        }
+
+        th:nth-child(odd) {
+            background: $table-dark-blue;
+        }
+    }
+
+    tbody {
+        tr {
+            height: 80px;
+            td:not(:first-child) {
+                padding: 5px 10px;
+                font-size: .9em;
+            }
+        }
+
+        tr:nth-child(even) {
+            td:nth-child(odd) {
+                background: lighten($table-light-gray, 5%);
+            }
+            td:nth-child(even) {
+                background: $table-light-gray;
+            }
+        }
+
+        tr:nth-child(odd) {
+            td:nth-child(odd) {
+                background: $table-light-gray;
+            }
+            td:nth-child(even) {
+                background: $table-dark-gray;
+            }
+        }
+    }
+}
+
+.block-image {
+    margin: 25px 0 0;
+    width: 100%;
+}
+
+
+//animation classes
+
+.bar-flat {
+    transform: rotateZ(0deg);
+}
+
+.accordion-collapsed {
+    height: 0;
+}
+

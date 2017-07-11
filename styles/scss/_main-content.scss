@@ -7,7 +7,7 @@
 
 //main content styles
 .main-content {
-    width: 70%;
+    width: 71%;
     float: left;
 }
 
@@ -16,11 +16,17 @@
     background: transparentize($accent, .7);
     font-size: 1.1em;
     margin: 0 0 30px;
-    line-height: 25px;
+    line-height: $standard-line-height;
 
     p {
         opacity: .9;
     }
+}
+
+.section-content__standard-text {
+    margin: 30px 0;
+    line-height: $standard-line-height;
+    font-family: Roboto-Light;
 }
 
 //section styles
@@ -29,7 +35,7 @@
     font-size: 1.8em;
     color: $accent;
     text-align: center;
-    margin: 45px auto 50px;
+    margin: 50px auto;
     position: relative;
 
     &::after {
@@ -43,6 +49,12 @@
         background: $accent;
         opacity: .5;
     }
+}
+
+.section-anchor-target {
+    position: absolute;
+    top: -100px;
+    left: 0;
 }
 
 
@@ -84,6 +96,11 @@
         &:hover {
             background: darken($gray-accent, 15%);
         }
+
+        &.button-disabled {
+            background: darken($gray-accent, 15%);
+            pointer-events: none;
+        }
     }
 }
 
@@ -91,6 +108,16 @@
 //in this article
 .main-sidebar__in-this-article {
     border: $standard-border;
+    transition: top .6s, position 0s .8s;
+    top: 0;
+    position: relative;
+}
+
+.main-sidebar__in-this-article.sticky {
+    position: fixed;
+    top: 110px;
+    width: 250px;
+    transition: top .6s;
 }
 
 .main-sidebar__in-this-article-list {
@@ -193,4 +220,21 @@
     &:hover {
         background: darken($linkedin-color, 10%);
     }
+}
+
+//footnotes
+.footnote-divider {
+    margin: 40px 0;
+}
+
+.main-content__footnotes-list {
+    list-style: disc;
+    margin-left: 2%
+}
+
+.main-content__footnote {
+    font-size: .85em;
+    margin-bottom: 15px;
+    color: $red-accent;
+    padding-left: 15px;
 }
