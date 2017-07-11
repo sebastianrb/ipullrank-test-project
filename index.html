@@ -4,12 +4,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>The Truth About Medicare</title>
         <link rel="stylesheet" href="./dest/styles/main.min.css"/>
+        <link rel="amphtml" href="./amp.html">
         <script src="https://use.fontawesome.com/3c2bdfb862.js"></script>
         <link rel="icon" href="http://k7n5z0yp9k-flywheel.netdna-ssl.com/wp-content/uploads/2016/03/cropped-United-Medicare-Advisors-logo-mark-300x300-32x32.png" sizes="32x32">
     </head>
     <body>
 
     <header class="header">
+        <div class="mobile-sidebar-button">
+            <!-- <i class="fa fa-chevron-left" aria-hidden="true"></i> -->
+            <i class="fa fa-sliders" aria-hidden="true"></i>
+        </div>
         <nav class="header__sticky-nav">
             <div class="header__phone-bar">
                 <p class="header__phone-bar-text">
@@ -28,7 +33,7 @@
                 <div class="header__sticky-nav-icon">
                     <img src="./dest/images/logo.png" alt="placeholder+image" class="header__sticky-nav-icon-image">
                 </div>
-                <ul class="header__sticky-nav-list">
+                <ul class="header__sticky-nav-list top-menu-collapsed">
                     <li class="header__sticky-nav-list-item home">
                         <a href="#" class="header__sticky-nav-link">Home</a>
                     </li>
@@ -51,9 +56,9 @@
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </li>
                 </ul>
-<!--                 <div class="header__sticky-nav-list--mobile-button">
-
-                </div> -->
+                <div class="header__sticky-nav-list--mobile-button">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
             </div>
         </nav>
         <div class="header__breadcrumb">
@@ -153,7 +158,7 @@
                                 <div class="section-content__accordion-header-expand-line-vertical"></div>
                             </div>
                         </div>
-                        <article class="section-content__accordion-content">
+                        <article class="section-content__accordion-content accordion-collapsed">
                             <div class="section-content__accordion-content-left-column">
                                 <div class="section-content__accordion-header-fact-box">
                                     <p class="section-content__accordion-header-fact-box-word">Fact</p>
@@ -404,9 +409,9 @@
                     <h4 class="main-sidebar__section-heading">Adjust The Web Font Size:</h4>
                     <div class="main-sidebar__text-size-adjust-buttons">
                         <button class="main-sidebar__text-size-adjust-button text-smaller">-</button>
-                        <div class="max-small-alert">This is the smallest the font can get.</div>
+                        <div class="max-small-alert">This is the smallest font available.</div>
                         <button class="main-sidebar__text-size-adjust-button text-larger">+</button>
-                        <div class="max-large-alert">This is the largest the font can get.</div>
+                        <div class="max-large-alert">This is the largest font available.</div>
                     </div>
                 </div>
                 <div class="main-sidebar__in-this-article sidebar-section">

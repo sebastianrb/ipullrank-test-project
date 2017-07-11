@@ -14,12 +14,25 @@
         width: calc(100% - 340px);
         float: left;
 
+        @media screen and (max-width: $breakpoint-750) {
+            width: 100%;
+            float: none;
+        }
     }
 
     .section-content__text-image-box-image {
         width: 320px;
         float: right;
         margin: 5px;
+
+        @media screen and (max-width: $breakpoint-750) {
+            width: 60%;
+            min-width: 250px;
+            max-width: 300px;
+            float: none;
+            display: block;
+            margin: 15px auto;
+        }
     }
 }
 
@@ -42,6 +55,7 @@
     font-size: 1.3em;
     font-family: Roboto-Light;
     margin: 0 0 15px;
+    text-align: center;
 }
 
 .section-content__section1-learn-more-box-button {

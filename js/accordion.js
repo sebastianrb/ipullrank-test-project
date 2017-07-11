@@ -1,55 +1,83 @@
 (function() {
     "use strict";
 
-    //cache dom nodes
-    var $accordionButtons = $(".section-content__accordion-header-expand-button");
-    var $accordions = $(".section-content__accordion");
-    var firstAccordionHeight = $accordions.first().find(".section-content__accordion-content-right-column").outerHeight(true);
+    $(document).ready(function() {
+        //cache dom nodes
+        var $accordionButtons = $(".section-content__accordion-header-expand-button");
+        var $accordions = $(".section-content__accordion");
+        var firstAccordionHeight = $accordions.first().find(".section-content__accordion-content-right-column").outerHeight(true);
+        var firstFactDivHeight = $accordions.first().find(".section-content__accordion-content-left-column").outerHeight(true);
 
-    //set first accordion content height so it can animate
-    $accordions.first().find(".section-content__accordion-content").css('height', firstAccordionHeight + "px");
+        //set first accordion content height so it can animate
+        // if(window.innerWidth > 750) {
+        //     $accordions.first().find(".section-content__accordion-content").css('height', firstAccordionHeight + 10 + "px");
+        // } else {
+        //     $accordions.first().find(".section-content__accordion-content").css('height', firstAccordionHeight + firstFactDivHeight + 10 + "px");
+        // }
 
-    //style the expand/collapse buttons dynamically based on the state of the accordion content for each accordion
-    $('.section-content__accordion').each(function(index, element) {
-        var $article = $(element).find(".section-content__accordion-content");
-        var $verticalBar = $(element).find('.section-content__accordion-header-expand-line-vertical');
+        //style the expand/collapse buttons dynamically based on the state of the accordion content for each accordion
+        $('.section-content__accordion').each(function(index, element) {
+            var $article = $(element).find(".section-content__accordion-content");
+            var $verticalBar = $(element).find('.section-content__accordion-header-expand-line-vertical');
 
-        if($article.hasClass("accordion-collapsed")) {
-            $verticalBar.removeClass("bar-flat");
-        } else {
-            $verticalBar.addClass("bar-flat");
-        }
-    });
+            if($article.hasClass("accordion-collapsed")) {
+                $verticalBar.removeClass("bar-flat");
+            } else {
+                $verticalBar.addClass("bar-flat");
+            }
+        });
 
 
-    //add event listener for expanding accordions
-    $accordionButtons.on('click', function(event) {
-        event.preventDefault();
+        //add event listener for expanding accordions
+        $accordionButtons.on('click', function(event) {
+            event.preventDefault();
 
-        //expand or collapse article
-        //get article height dynamically
-        var $article = $(this).closest(".section-content__accordion").find(".section-content__accordion-content");
-        var articleHeight = $article.find(".section-content__accordion-content-right-column").outerHeight(true);
+            //expand or collapse article
+            //get article height dynamically
 
-        if($article.hasClass("accordion-collapsed")) {
-            $article.css({
-                height: articleHeight + "px"
-            });
-            $article.removeClass("accordion-collapsed");
-        } else {
-            $article.css({
-                height: "0"
-            });
-            $article.addClass("accordion-collapsed");
-        }
+            if(window.innerWidth > 750) {
+                var $article = $(this).closest(".section-content__accordion").find(".section-content__accordion-content");
+                var articleHeight = $article.find(".section-content__accordion-content-right-column").outerHeight(true);
 
-        //change button
-        var $verticalBar = $(this).find('.section-content__accordion-header-expand-line-vertical');
-        if($verticalBar.hasClass("bar-flat")) {
-            $verticalBar.removeClass("bar-flat");
-        } else {
-            $verticalBar.addClass("bar-flat");
-        }
+                if($article.hasClass("accordion-collapsed")) {
+                    $article.css({
+                        height: articleHeight + "px"
+                    });
+                    $article.removeClass("accordion-collapsed");
+                } else {
+                    $article.css({
+                        height: "0"
+                    });
+                    $article.addClass("accordion-collapsed");
+                }
+            } else {
+                var $article = $(this).closest(".section-content__accordion").find(".section-content__accordion-content");
+                var $factDiv = $(this).closest(".section-content__accordion").find(".section-content__accordion-content-left-column");
+                var factDivHeight = $factDiv.outerHeight(true);
+                var articleHeight = $article.find(".section-content__accordion-content-right-column").outerHeight(true) + factDivHeight;
+
+                if($article.hasClass("accordion-collapsed")) {
+                    $article.css({
+                        height: articleHeight + "px"
+                    });
+                    $article.removeClass("accordion-collapsed");
+                } else {
+                    $article.css({
+                        height: "0"
+                    });
+                    $article.addClass("accordion-collapsed");
+                }
+            }
+
+            //change button
+            var $verticalBar = $(this).find('.section-content__accordion-header-expand-line-vertical');
+            if($verticalBar.hasClass("bar-flat")) {
+                $verticalBar.removeClass("bar-flat");
+            } else {
+                $verticalBar.addClass("bar-flat");
+            }
+
+        });
 
     });
 

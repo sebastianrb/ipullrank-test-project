@@ -6,6 +6,14 @@
     height: auto;
     position: relative;
 
+    @media screen and (max-width: $breakpoint-750) {
+        padding: 40px 30px;
+    }
+
+    @media screen and (max-width: $breakpoint-600) {
+        font-size: .9em;
+    }
+
     .footer__paragraph {
         margin: 20px 0;
         font-size: .9em;

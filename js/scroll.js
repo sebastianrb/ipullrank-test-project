@@ -3,6 +3,7 @@
 
     //get height of sidebar and sidebar offset
     var sidebar = document.querySelector(".main-sidebar");
+    var sidebarMobileMenuButton = document.querySelector(".mobile-sidebar-button");
     var sidebarHeight = sidebar.offsetHeight;
     var sidebarOffsetTop = $(sidebar).offset().top;
     var articleMenu = document.querySelector(".main-sidebar__in-this-article");
@@ -13,8 +14,10 @@
     var sections = Array.from(document.querySelectorAll(".main-section"));
     //create object of section offsets
     var sectionOffsets = makeSectionOffsetObject(sections);
+    //offsets and breakpoints
     var stickyMenuHeightOffset = 190;
     var phoneBarFoldedDown = 320;
+    var stickyMenuBreakpoint = 950
 
 
     //throttle scrolling and handle sticky menu
@@ -33,10 +36,12 @@
     function handleScrollEvents() {
 
         //make article menu sticky
-        if($(window).scrollTop() > sidebarHeight + sidebarOffsetTop - topOffset) {
-            articleMenu.classList.add("sticky");
-        } else {
-            articleMenu.classList.remove("sticky");
+        if(window.innerWidth > 950) {
+            if($(window).scrollTop() > sidebarHeight + sidebarOffsetTop - topOffset) {
+                articleMenu.classList.add("sticky");
+            } else {
+                articleMenu.classList.remove("sticky");
+            }
         }
 
         //highlight current article in article menu
@@ -78,6 +83,11 @@
 
         sectionOffsets = makeSectionOffsetObject(sections);
         // console.log(sectionOffsets);
+
+        if(window.innerWidth > 950) {
+            sidebar.classList.remove("mobile-sidebar-expanded");
+            sidebarMobileMenuButton.classList.remove("mobile-sidebar-button-activated");
+        }
     }
 
 

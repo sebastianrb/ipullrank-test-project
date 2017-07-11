@@ -1,0 +1,1146 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>The Truth About Medicare</title>
+    <link rel="canonical" href="./index.html" />
+<!--     <script src="https://use.fontawesome.com/3c2bdfb862.js"></script> -->
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <!-- styles -->
+    <style amp-custom>
+
+      @font-face {
+          font-family: "Roboto-Light";
+          src: url("./Roboto Fonts/Roboto-Light.ttf");
+      }
+
+      @font-face {
+          font-family: "Roboto-Bold";
+          src: url("./Roboto Fonts/Roboto-Bold.ttf");
+      }
+
+      @font-face {
+          font-family: "Roboto-Regular";
+          src: url("./Roboto Fonts/Roboto-Regular.ttf");
+      }
+      /* any custom style goes here */
+      * {
+          box-sizing: border-box;
+          outline: none;
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        background-image: url(http://www.unitedmedicareadvisors.com/wp-content/uploads/2016/06/shattered.png);
+        background-repeat: repeat-y;
+        background-attachment: scroll;
+        background-size: cover;
+      }
+      body {
+        /*max-width: 1100px;*/
+        width: 100%;
+        margin: 0 auto;
+        font-family: Roboto-Regular;
+      }
+      amp-img {
+        width: 100%;
+      }
+      p, h1, h2, h3, h4, h5, h6 {
+          margin: 0
+      }
+
+      ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+      }
+
+      a {
+          text-decoration: none;
+      }
+
+      .amp-site-container {
+        width: 100%;
+        max-width: 1150px;
+        margin: 0 auto;
+        background: white;
+      }
+
+      /*header stuff*/
+      .header {
+        height: auto;
+        position: relative;
+        padding-top: 125px; }
+        @media screen and (max-width: 850px) {
+          .header {
+            padding-top: 260px; } }
+        @media screen and (max-width: 500px) {
+          .header {
+        padding-top: 390px; } }
+        .header .header__breadcrumb {
+          width: 93%;
+          margin: 20px auto;
+          font-size: 1.1em; }
+          @media screen and (max-width: 750px) {
+            .header .header__breadcrumb {
+              font-size: 1em; } }
+        .header .header__breadcrumb-text > a {
+          color: #2eb1ff;
+          transition: all .1s; }
+          .header .header__breadcrumb-text > a:hover {
+            color: #c91310; }
+        .header .header__sticky-nav {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          max-width: 1150px;
+          opacity: 1;
+          z-index: 1000; }
+        .header .header__sticky-nav-content {
+          height: 75px;
+          position: absolute;
+          top: 40px;
+          max-width: 1150px;
+          background: white;
+          width: 100%;
+          transition: top .4s;
+          padding: 10px 40px;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          align-items: center;
+          box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.4); }
+          @media screen and (max-width: 850px) {
+            .header .header__sticky-nav-content {
+              top: 2px;
+              display: flex;
+              flex-flow: row nowrap;
+              justify-content: center;
+              align-items: center;} }
+        .header .header__sticky-nav-content.pushed {
+          top: 2px; }
+        .header .header__sticky-nav-icon {
+          width: 140px;
+          min-width: 100px;
+          height: auto; }
+          @media screen and (max-width: 850px) {
+            .header .header__sticky-nav-icon {
+              width: 120px; } }
+        .header .header__sticky-nav-icon-image {
+          width: 100%; }
+        .header .header__sticky-nav-list {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center;
+          font-family: Roboto-Regular;
+          min-width: 655px;
+          transition: all .5s; }
+          @media screen and (max-width: 850px) {
+            .header .header__sticky-nav-list {
+              position: absolute;
+              top: 100%;
+              width: 100%;
+              background: white;
+              left: 0px;
+              height: 175px;
+              border-bottom: 7px solid #2eb1ff;
+              padding: 25px 35px;
+              flex-flow: column wrap;
+              min-width: 0;
+              overflow: hidden;
+              background: #e3e3e3; } }
+          @media screen and (max-width: 500px) {
+            .header .header__sticky-nav-list {
+              height: 300px; } }
+        @media screen and (max-width: 850px) {
+          .header .top-menu-collapsed {
+            left: 0; } }
+        .header .header__sticky-nav-list--mobile-button {
+          display: none;
+          transition: all 0.2s; }
+          @media screen and (max-width: 850px) {
+            .header .header__sticky-nav-list--mobile-button {
+              display: block;
+              font-size: 1.7em;
+              cursor: pointer; }
+              .header .header__sticky-nav-list--mobile-button:hover {
+                color: #2eb1ff; } }
+        .header .header__sticky-nav-list-item:not(.search) {
+          margin-left: 10px;
+          font-weight: 500;
+          transition: background-color .3s, color .3s; }
+          @media screen and (max-width: 850px) {
+            .header .header__sticky-nav-list-item:not(.search) {
+              margin: 0; } }
+          .header .header__sticky-nav-list-item:not(.search):hover {
+            background-color: #2eb1ff;
+            color: white; }
+            @media screen and (max-width: 850px) {
+              .header .header__sticky-nav-list-item:not(.search):hover {
+                background: transparent; } }
+        .header .header__sticky-nav-list-item.search {
+          margin-left: 30px;
+          cursor: pointer;
+          transition: color .3s; }
+          @media screen and (max-width: 500px) {
+            .header .header__sticky-nav-list-item.search {
+              margin: 0; } }
+          .header .header__sticky-nav-list-item.search:hover {
+            color: #2eb1ff; }
+        .header .header__sticky-nav-link {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+          color: inherit;
+          padding: 15px; }
+        .header .fa-search {
+          font-size: 1.2em; }
+        .header .header__phone-bar {
+          height: 40px;
+          background: #043a4f;
+          padding: 5px 40px;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          align-items: center; }
+        .header .header__phone-bar-text {
+          color: white; }
+          @media screen and (max-width: 850px) {
+            .header .header__phone-bar-text {
+              color: #043a4f; } }
+        .header .fa-phone {
+          margin-right: 10px;
+          color: #0981b0;
+          font-size: 1.2em; }
+        .header .header__social-bar {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center;
+          color: white; }
+        .header .social-icon {
+          margin-left: 20px;
+          font-size: 1.2em;
+          cursor: pointer;
+          transition: color .2s; }
+          .header .social-icon:hover {
+            color: #2eb1ff; }
+        .header .header__phone-bar-text,
+        .header .header__social-bar {
+          opacity: .9;
+          font-size: .95em; }
+        .header .header__content {
+          background-image: url("./dest/images/banner-image.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 50%;
+          height: 500px;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center;
+          width: 93%;
+          margin: 0 auto; }
+        .header .header__title {
+          font-family: Roboto-Bold;
+          font-size: 2.5em;
+          color: white;
+          letter-spacing: 1px;
+          text-align: center; }
+          @media screen and (max-width: 750px) {
+            .header .header__title {
+              font-size: 2.2em;
+              padding: 0 25px; } }
+        .header .header__divider {
+          width: 20%;
+          margin: 25px auto;
+          background-color: #2eb1ff;
+          height: 5px; }
+        .header .header__subtitle {
+          width: 45%;
+          color: #e3e3e3;
+          text-align: center;
+          font-size: 1.1em;
+          opacity: .8;
+          font-family: Roboto-Regular; }
+          @media screen and (max-width: 750px) {
+            .header .header__subtitle {
+              font-size: 1em;
+              width: 70%; } }
+
+
+
+
+        /*main content*/
+
+
+        .main-container {
+          overflow: auto;
+          background: white;
+          padding: 50px 3.5%; }
+
+        .main-content {
+          width: 100%;
+          /*float: left; */
+          margin-bottom: 20px;}
+          @media screen and (max-width: 950px) {
+            .main-content {
+              float: none;
+              width: 100%; } }
+
+        .main-content__intro-text {
+          padding: 15px 30px;
+          background: rgba(46, 177, 255, 0.3);
+          font-size: 1.1em;
+          margin: 0 0 30px;
+          line-height: 25px; }
+          .main-content__intro-text p {
+            opacity: .9; }
+
+        .section-content__standard-text {
+          margin: 30px 0;
+          line-height: 25px;
+          font-family: Roboto-Light;
+          font-weight: 900;
+          font-size: 1.05em; }
+
+        .section-header {
+          width: 80%;
+          font-size: 1.8em;
+          color: #2eb1ff;
+          text-align: center;
+          margin: 50px auto;
+          position: relative; }
+          .section-header::after {
+            content: "";
+            width: 150px;
+            height: 5px;
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2eb1ff;
+            opacity: .5; }
+
+        .section-anchor-target {
+          position: absolute;
+          top: -100px;
+          left: 0; }
+
+        .main-sidebar {
+          /*float: right;*/
+          display: block;
+          width: 100%; }
+          @media screen and (max-width: 950px) {
+            .main-sidebar {
+              float: none;
+              width: 75%;
+              background: #c7eaff;
+              border-left: 4px solid #2eb1ff;
+              position: fixed;
+              right: -120%;
+              top: 0;
+              transition: right .5s; }
+              .main-sidebar.mobile-sidebar-expanded {
+                right: 0;
+                height: 100%;
+                padding: 20px 30px;
+                z-index: 1000; } }
+            @media screen and (max-width: 950px) and (max-width: 500px) {
+              .main-sidebar.mobile-sidebar-expanded {
+                padding: 20px 15px;
+                font-size: .9em; } }
+          @media screen and (max-width: 950px) {
+                .main-sidebar.mobile-sidebar-expanded .main-sidebar__container {
+                  display: flex;
+                  flex-flow: column nowrap;
+                  justify-content: space-between;
+                  align-items: center;
+                  height: 100%; }
+                .main-sidebar.mobile-sidebar-expanded .sidebar-section {
+                  margin-bottom: 10px; }
+                .main-sidebar.mobile-sidebar-expanded .main-sidebar__in-this-article-item a {
+                  padding: 13px; }
+                .main-sidebar.mobile-sidebar-expanded .main-sidebar__text-size-adjust-button {
+                  width: 70px;
+                  height: 70px; } }
+
+        .main-sidebar__section-heading {
+          margin: 0 0 10px;
+          color: black;
+          font-size: 1.2em;
+          font-family: Roboto-Bold;
+          text-align: center; }
+
+        .sidebar-section {
+          margin-bottom: 35px;
+          min-width: 220px; }
+
+        .main-sidebar__text-size-adjust {
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center;
+          position: relative; }
+          .main-sidebar__text-size-adjust .main-sidebar__text-size-adjust-button {
+            background: rgba(188, 188, 188, 0.7);
+            border: none;
+            margin: 10px;
+            color: #2eb1ff;
+            font-size: 2.3em;
+            width: 80px;
+            height: 80px;
+            border-radius: 4px;
+            font-family: Roboto-Bold;
+            cursor: pointer;
+            transition: all 0.2s; }
+            .main-sidebar__text-size-adjust .main-sidebar__text-size-adjust-button:hover {
+              background: rgba(173, 173, 173, 0.7);
+              transform: scale(1.05); }
+            .main-sidebar__text-size-adjust .main-sidebar__text-size-adjust-button.button-disabled {
+              background: rgba(173, 173, 173, 0.7);
+              cursor: auto;
+              opacity: .4;
+              transform: scale(1); }
+
+        .max-large-alert,
+        .max-small-alert {
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          width: 200px;
+          background: #2eb1ff;
+          color: white;
+          padding: 15px;
+          text-align: center;
+          border-radius: 4px;
+          z-index: -10;
+          opacity: 0;
+          transform: translateY(-10px) translateX(-50%);
+          transition: z-index 0.5s step-end, opacity .2s ease, transform .3s ease; }
+
+        .text-larger.button-disabled:hover + .max-large-alert,
+        .text-smaller.button-disabled:hover + .max-small-alert {
+          transform: translateY(0) translateX(-50%);
+          opacity: 1;
+          z-index: 100;
+          transition: z-index 0.5s step-start, opacity .2s ease, transform .3s ease; }
+
+        .main-sidebar__in-this-article {
+          border: 1px solid lightgray;
+          transition: top .6s, position 0s .8s;
+          top: 0;
+          position: relative; }
+
+        .main-sidebar:not(.mobile-sidebar-expanded) .main-sidebar__in-this-article.sticky {
+          position: fixed;
+          top: 110px;
+          width: 265px;
+          transition: top .6s; }
+          @media screen and (max-width: 1100px) {
+            .main-sidebar:not(.mobile-sidebar-expanded) .main-sidebar__in-this-article.sticky {
+              width: 240px; } }
+
+        .main-sidebar__in-this-article-list {
+          width: 100%;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center; }
+
+        .main-sidebar__in-this-article-item {
+          width: 100%;
+          height: auto;
+          text-align: center; }
+          .main-sidebar__in-this-article-item:first-child {
+            padding: 20px; }
+          .main-sidebar__in-this-article-item a {
+            padding: 20px 20px;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: white;
+            color: #c91310;
+            transition: all 0.2s; }
+          .main-sidebar__in-this-article-item a:hover {
+            background: lightgray; }
+
+        .main-sidebar__in-this-article-item.article-selected a {
+          background: lightgray; }
+
+        .in-this-article-header {
+          background: black;
+          color: white; }
+
+        .main-sidebar__social-share {
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center; }
+
+        .main-sidebar__social-share-list {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          align-items: center; }
+
+        .main-sidebar__social-share-icons {
+          width: 46%;
+          min-width: 115px;
+          margin: 4px;
+          padding: 12px;
+          border: 1px solid lightgray;
+          border-radius: 4px;
+          text-align: center;
+          color: white;
+          cursor: pointer;
+          font-size: .9em; }
+          .main-sidebar__social-share-icons .fa {
+            margin-right: 6px;
+            font-size: 1.4em;
+            text-shadow: 0 2px rgba(0, 0, 0, 0.55); }
+
+        .facebook-button {
+          background: #5d75af;
+          transition: all 0.2s; }
+          .facebook-button:hover {
+            background: #485d91; }
+
+        .google-button {
+          background: #d50f25;
+          transition: all 0.2s; }
+          .google-button:hover {
+            background: #a50c1d; }
+
+        .twitter-button {
+          background: #0084b4;
+          transition: all 0.2s; }
+          .twitter-button:hover {
+            background: #005f81; }
+
+        .linkedin-button {
+          background: #86888A;
+          transition: all 0.2s; }
+          .linkedin-button:hover {
+            background: #6d6f70; }
+
+        .footnote-divider {
+          margin: 40px 0; }
+
+        .main-content__footnotes-list {
+          list-style: disc;
+          margin-left: 2%; }
+          @media screen and (max-width: 750px) {
+            .main-content__footnotes-list {
+              width: 95%;
+              margin: 10px auto;
+              overflow: hidden; } }
+
+        .main-content__footnote {
+          font-size: .85em;
+          margin-bottom: 15px;
+          color: #c91310;
+          padding-left: 15px; }
+          @media screen and (max-width: 750px) {
+            .main-content__footnote {
+              padding: 0 10px; } }
+
+        .mobile-sidebar-button {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          background: #2eb1ff;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center;
+          position: fixed;
+          right: 35px;
+          bottom: 30px;
+          display: none;
+          z-index: 100;
+          transition: all .5s;
+          cursor: pointer;
+          box-shadow: 0 2px 6px 0px rgba(128, 128, 128, 0.5); }
+          @media screen and (max-width: 950px) {
+            .mobile-sidebar-button {
+              display: flex; } }
+          .mobile-sidebar-button:hover {
+            background: #007dc7; }
+          .mobile-sidebar-button i {
+            color: white;
+            font-size: 1.6em;
+            transition: all 0.2s; }
+          .mobile-sidebar-button.mobile-sidebar-button-activated {
+            right: 80%; }
+
+
+          /*section 1*/
+
+
+          .section-content__text-image-box {
+            overflow: hidden;
+            margin: 20px 0; }
+            .section-content__text-image-box .section-content__standard-text {
+              margin: 0 0 30px; }
+            .section-content__text-image-box .section-content__standard-text:last-child {
+              margin: 0; }
+            .section-content__text-image-box .section-content__text-image-box-text-column {
+              width: calc(100% - 340px);
+              float: left; }
+              @media screen and (max-width: 750px) {
+                .section-content__text-image-box .section-content__text-image-box-text-column {
+                  width: 100%;
+                  float: none; } }
+            .section-content__text-image-box .section-content__text-image-box-image {
+              width: 320px;
+              float: right;
+              margin: 5px; }
+              @media screen and (max-width: 750px) {
+                .section-content__text-image-box .section-content__text-image-box-image {
+                  width: 60%;
+                  min-width: 250px;
+                  max-width: 300px;
+                  float: none;
+                  display: block;
+                  margin: 15px auto; } }
+
+          .section-content__blue-box {
+            padding: 15px 30px;
+            background: rgba(46, 177, 255, 0.3);
+            font-size: .9em;
+            margin: 0 0 10px;
+            line-height: 25px; }
+
+          .section-content__section1-learn-more-box {
+            background: #f5a403;
+            color: white;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px; }
+
+          .section-content__section1-learn-more-box-caption {
+            font-size: 1.3em;
+            font-family: Roboto-Light;
+            margin: 0 0 15px;
+            text-align: center; }
+
+          .section-content__section1-learn-more-box-button {
+            padding: 5px 10px;
+            width: 200px;
+            background: white;
+            color: #f5a403;
+            border-radius: 4px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.3em;
+            transition: all 0.2s;
+            cursor: pointer; }
+            .section-content__section1-learn-more-box-button:hover {
+              background: #feebc6; }
+
+
+              /*section 2*/
+              table {
+                border-collapse: collapse;
+                border-spacing: 0;
+                margin: 10px auto;}
+                @media screen and (max-width: 600px) {
+                  table {
+                    font-size: .9em; } }
+                @media screen and (max-width: 500px) {
+                  table {
+                    font-size: .85em; } }
+
+              .section-content__medicare-costs-table th, .section-content__medicare-costs-table td {
+                width: 150px;
+                text-align: center; }
+
+              .section-content__medicare-costs-table thead {
+                border-bottom: 10px solid #f5a403; }
+
+              .section-content__medicare-costs-table thead tr {
+                color: white;
+                font-family: Roboto-Bold; }
+
+              .section-content__medicare-costs-table thead th {
+                padding: 10px 5px; }
+
+              .section-content__medicare-costs-table thead th:nth-child(odd) {
+                background: #155479; }
+
+              .section-content__medicare-costs-table thead th:nth-child(even) {
+                background: #04394f; }
+
+              .section-content__medicare-costs-table tbody tr {
+                height: 80px; }
+                .section-content__medicare-costs-table tbody tr td:first-child {
+                  color: white; }
+                .section-content__medicare-costs-table tbody tr td:not(:first-child) {
+                  padding: 5px 10px;
+                  font-size: .9em; }
+
+              .section-content__medicare-costs-table tbody tr:nth-child(even) td:nth-child(odd) {
+                background: #fdfdfd; }
+
+              .section-content__medicare-costs-table tbody tr:nth-child(even) td:nth-child(even) {
+                background: #f0f1f1; }
+
+              .section-content__medicare-costs-table tbody tr:nth-child(even) td:first-child {
+                background: #155479; }
+
+              .section-content__medicare-costs-table tbody tr:nth-child(odd) td:nth-child(odd) {
+                background: #f0f1f1; }
+
+              .section-content__medicare-costs-table tbody tr:nth-child(odd) td:nth-child(even) {
+                background: #e7e8e8; }
+
+              .section-content__medicare-costs-table tbody tr:nth-child(odd) td:first-child {
+                background: #04394f; }
+
+
+              /*accordions*/
+
+            amp-accordion {
+              margin: 30px auto;
+            }
+
+            amp-accordion section {
+              margin-bottom: 5px;
+              border: 1px solid gray;
+            }
+
+            amp-accordion section .section-content__standard-text {
+              margin: 0 auto;
+            }
+
+            amp-accordion section amp-img {
+              margin: 15px auto;
+              display: block;
+            }
+
+            amp-accordion>section[expanded]>:last-child {
+              padding: 20px;
+            }
+
+            amp-accordion section h4.amp-accordion-header {
+                height: auto;
+                padding: 25px;
+                background: rgba(46, 177, 255, 0.29);
+                border: none;
+                font-family: Roboto-Light;
+            }
+
+
+            .red-span {
+                color: red;
+                font-family: Roboto-Bold; }
+
+
+                /*fact list*/
+
+              .section-content__fact-list {
+                margin-left: 25px; }
+                @media screen and (max-width: 950px) {
+                  .section-content__fact-list {
+                    padding: 0 10px; } }
+                @media screen and (max-width: 750px) {
+                  .section-content__fact-list {
+                    margin-left: 15px; } }
+                .section-content__fact-list .section-content__standard-text {
+                  margin-top: 0; }
+
+              .section-content__fact-list-item {
+                font-size: 1.3em;
+                font-weight: bold;
+                padding-left: 20px;
+                margin-bottom: 20px; }
+
+              .section-content__fact-list-item:last-of-type + .section-content__fact-list-description .section-content__standard-text {
+                margin-bottom: 0; }
+
+              .section-content__fact-list-description {
+                padding-left: 20px;
+                margin-bottom: 30px; }
+
+              .section-content__text-image-box.section-03 {
+                margin-top: 0; }
+                .section-content__text-image-box.section-03 .section-content__text-image-box-text-column {
+                  width: calc(100% - 275px); }
+                  @media screen and (max-width: 750px) {
+                    .section-content__text-image-box.section-03 .section-content__text-image-box-text-column {
+                      width: 100%;
+                      float: none; } }
+                .section-content__text-image-box.section-03 .section-content__text-image-box-image {
+                  width: 250px;
+                  margin: 0 0 0 25px; }
+                  @media screen and (max-width: 750px) {
+                    .section-content__text-image-box.section-03 .section-content__text-image-box-image {
+                      width: 60%;
+                      min-width: 250px;
+                      max-width: 300px;
+                      float: none;
+                      display: block;
+                      margin: 15px auto; } }
+
+              .section-content__text-image-box.image-left .section-content__text-image-box-image {
+                float: left;
+                width: 270px;
+                margin: 0 25px 0 0; }
+                @media screen and (max-width: 750px) {
+                  .section-content__text-image-box.image-left .section-content__text-image-box-image {
+                    width: 60%;
+                    min-width: 250px;
+                    max-width: 300px;
+                    float: none;
+                    display: block;
+                    margin: 0 auto 15px; } }
+
+              .section-content__text-image-box.image-left .section-content__text-image-box-text-column {
+                float: right;
+                width: calc(100% - 295px); }
+                @media screen and (max-width: 750px) {
+                  .section-content__text-image-box.image-left .section-content__text-image-box-text-column {
+                    width: 100%;
+                    float: none; } }
+
+
+
+              /*supplement section*/
+
+              .section-content__medicare-supplement-icons {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center; }
+
+              .section-content__medicare-supplement-icon {
+                margin: 20px 26px 45px;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                position: relative; }
+                .section-content__medicare-supplement-icon .section-content__medicare-supplement-icon-caption {
+                  font-size: 1.3em;
+                  margin-top: 5px;
+                  text-align: center; }
+                .section-content__medicare-supplement-icon::after {
+                  content: attr(data-text);
+                  position: absolute;
+                  top: 103%;
+                  font-size: 1.2em;
+                  text-align: center;
+                  width: 150%;
+                  letter-spacing: -1px; }
+
+                  /*footer stuff*/
+
+                  .footer-alerts {
+                    margin-top: 50px;
+                    color: #e3e3e3;
+                    background-color: #454545;
+                    width: 100%;
+                    padding: 50px 40px;
+                    height: auto;
+                    position: relative; }
+                    @media screen and (max-width: 750px) {
+                      .footer-alerts {
+                        padding: 40px 30px; } }
+                    @media screen and (max-width: 600px) {
+                      .footer-alerts {
+                        font-size: .9em; } }
+                    .footer-alerts .footer__paragraph {
+                      margin: 20px 0;
+                      font-size: .9em;
+                      line-height: 25px; }
+                    .footer-alerts .footer__link {
+                      color: #2eb1ff;
+                      transition: all 0.2s; }
+                      .footer-alerts .footer__link:hover {
+                        color: #c91310; }
+
+                  footer {
+                    background: black;
+                    height: 90px;
+                    width: 100%;
+                    padding: 20px;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-weight: lighter;
+                    font-family: Roboto-Light;
+                    position: relative; }
+                    footer .footer__paragraph {
+                      opacity: .7;
+                      font-size: .9em; }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="amp-site-container">
+      <header class="header">
+          <nav class="header__sticky-nav">
+              <div class="header__phone-bar">
+                  <p class="header__phone-bar-text">
+                      Call for More Information: 1 (866) 648-0446
+                  </p>
+              </div>
+              <div class="header__sticky-nav-content">
+                  <div class="header__sticky-nav-icon">
+                      <amp-img src="./dest/images/logo.png" alt="placeholder+image" class="header__sticky-nav-icon-image" width="100" height="50">
+                  </div>
+                  <ul class="header__sticky-nav-list top-menu-collapsed">
+                      <li class="header__sticky-nav-list-item home">
+                          <a href="#" class="header__sticky-nav-link">Home</a>
+                      </li>
+                      <li class="header__sticky-nav-list-item about-us">
+                          <a href="#" class="header__sticky-nav-link">About Us</a>
+                      </li>
+                      <li class="header__sticky-nav-list-item medical-resources">
+                          <a href="#" class="header__sticky-nav-link">Medical Resources</a>
+                      </li>
+                      <li class="header__sticky-nav-list-item blog">
+                          <a href="#" class="header__sticky-nav-link">Blog</a>
+                      </li>
+                      <li class="header__sticky-nav-list-item FAQ">
+                          <a href="#" class="header__sticky-nav-link">FAQ</a>
+                      </li>
+                      <li class="header__sticky-nav-list-item contact">
+                          <a href="#" class="header__sticky-nav-link">Contact</a>
+                      </li>
+                      <li class="header__sticky-nav-list-item contact">
+                          <a href="#" class="header__sticky-nav-link">Search</a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+          <div class="header__breadcrumb">
+              <p class="header__breadcrumb-text"><a href="#">Medicare Resources </a>&gt; The Truth About Medicare</p>
+          </div>
+          <div class="header__content">
+              <h1 class="header__title">The Truth About Medicare</h1>
+
+              <div class="header__divider"></div>
+
+              <p class="header__subtitle">It is common to feel like a fish out of water when navigating Medicare. Though popular and useful to millions of seniors, there are many people – beneficiaries and prospects alike – who have varied misconceptions about the nationwide health insurance program.</p>
+          </div>
+      </header>
+      <main class="main-container">
+        <div class="main-content">
+          <div class="main-content__intro-text font-change">
+              <p>Besides these fallacies, there are some critical aspects of Medicare that people are simply not aware of. Let’s clear the fog on Medicare, addressing the myths and misconceptions to help you make better and informed decisions when enrolling in Medicare.</p>
+          </div>
+          <section class="main-section" data-section-id="0">
+              <h3 class="section-header font-change">What People Think<span class="section-anchor-target" id="section-0"></span></h3>
+              <div class="section-content">
+                  <p class="section-content__standard-text font-change">There are many misconceptions around the facts and details of Medicare. Some of these come from the general public, while others spring directly from Medicare’s annual cost and benefit changes.</p>
+                  <p class="section-content__standard-text font-change">The costs of Medicare, primarily the premiums, change every year. Couple that with the different plans and coverage amounts and you have a perfect storm for confusion. With all the nuances, beneficiaries can benefit from a centralized, definitive hub of information.</p>
+                  <div class="section-content__text-image-box">
+                      <div class="section-content__text-image-box-text-column">
+                          <p class="section-content__standard-text font-change">As a provider of health insurance for seniors, Medicare is seen as a necessary social program. Some are even lead to believe that it is free.</p>
+                          <p class="section-content__standard-text font-change">Unfortunately, it is not free of charges; it is made up of premiums, deductibles, coinsurance costs, prescription drug costs and other out-of-pocket costs.</p>
+                          <p class="section-content__standard-text font-change">While Medicare does have certain services that are free in a sense, it certainly is not free as a whole.</p>
+                      </div>
+                      <amp-img src="./dest/images/premium-diagram.png" alt="Premium Diagram" class="section-content__text-image-box-image" width="200" height="200">
+                  </div>
+                  <div class="section-content__blue-box font-change">Part A, or hospital insurance premium, is free for eligible beneficiaries, those who have paid taxes to Medicare while working.</div>
+                  <div class="section-content__blue-box font-change">Medicare Part B is not free at all, as it charges a premium based on your income.</div>
+                  <div class="section-content__blue-box font-change">Parts C, D and Medicare Supplement cover different services and purposes; and they all charge costs of their own as well.</div>
+                  <p class="section-content__standard-text font-change">There are other factors to consider when arriving at the truth about Medicare, besides costs alone. It important to separate the facts from fiction. Read as we debunk some commonly held myths about Medicare.</p>
+                  <div class="section-content__section1-learn-more-box">
+                      <p class="section-content__section1-learn-more-box-caption font-change">Get the Facts on Medicare Part A & B!</p>
+                      <p class="section-content__section1-learn-more-box-button font-change">Learn More</p>
+                  </div>
+              </div>
+          </section>
+
+          <!-- section 2 -->
+
+          <section class="main-section" data-section-id="1">
+              <h3 class="section-header font-change">Know the Costs of Medicare<span class="section-anchor-target" id="section-1"></span></h3>
+              <div class="section-content">
+                  <p class="section-content__standard-text font-change">Here is a glance at the basic 2017 costs of Medicare.</p>
+                  <table class="section-content__medicare-costs-table">
+                      <thead>
+                          <tr>
+                              <th></th>
+                              <th>Part A</th>
+                              <th>Part B</th>
+                              <th>Part C</th>
+                              <th>Part D</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>Premium</td>
+                              <td>$414</td>
+                              <td>$134</td>
+                              <td>Varies by Plan</td>
+                              <td>$0-$100</td>
+                          </tr>
+                          <tr>
+                              <td>Deductible</td>
+                              <td>$1,316 per each benefit period</td>
+                              <td>$183</td>
+                              <td>Varies by plan</td>
+                              <td>$0</td>
+                          </tr>
+                          <tr>
+                              <td>Co-insurance and Otehr Costs</td>
+                              <td>$329/day for days 61-90 in hospital</td>
+                              <td>20% of the service after you pay off the deductible</td>
+                              <td>Varies by plan</td>
+                              <td>75% of prescription drugs after you pay off the deductible</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </section>
+
+          <!-- section 2 -->
+
+          <h3 class="section-header font-change">Myths Vs Reality<span id="section-2" class="section-anchor-target"></span></h3>
+          <div class="section-content">
+            <amp-accordion>
+              <section expanded>
+                <h4 class="amp-accordion-header">Myth 1 - Medicare will close because of The Affordable Care Act.</h4>
+                <p class="section-content__standard-text">Fact - Medicare is not ending any time soon because of the Affordable Care Act, which has been a law since 2010. The ACA was not intended to replace Medicare and it will not take away any of the guaranteed benefits of Medicare. In fact, the ACA has in part made Medicare stronger, as it prohibits cuts to Medicare guaranteed benefits. The Affordable Care Act has provisions purposed with reducing the costs of Medicare, eliminating fraud and waste, providing patient-centered care and covering preventative care against chronic conditions.</p>
+              </section>
+              <section>
+                <h4 class="amp-accordion-header">Myth 2 - The AEP is the only time people can enroll in Medicare.</h4>
+                <p class="section-content__standard-text">Fact - The AEP, or Open Enrollment Period, only affects those already enrolled in Medicare. This period runs from October 15-December 7 each year. Although a major enrollment period, the AEP is not the only time period in which people can enroll in Medicare. In fact, this is the period in which beneficiaries make changes to their plans, so it does not pertain to hopeful enrollees. For those new to Medicare, there is the IEP, or <span class="red-span">Initial Enrollment Period</span>, which is a 7-month period surrounding your 65th birthday. The GEP, or <span class="red-span">General Enrollment Period</span>, exists if you’ve missed the IEP. There’s also the Special Enrollment Period, or SEP, for those obtaining health insurance from current employers and thus miss their IEP.
+                </p>
+              </section>
+              <section>
+                <h4 class="amp-accordion-header">Myth 3 - Everyone pays the same amount for Medicare.</h4>
+                <p class="section-content__standard-text">Fact - This content was not shown in the mockup provided by iPullRank.</p>
+              </section>
+              <section>
+                <h4 class="amp-accordion-header">Myth 4 - Medicare will be bankrupt in several years.</h4>
+                <p class="section-content__standard-text">Fact - This content was not shown in the mockup provided by iPullRank.</p>
+              </section>
+              <section>
+                <h4 class="amp-accordion-header">Myth 5 - Medicare needs to be redeveloped in policies and benefits.</h4>
+                <p class="section-content__standard-text">While everyone could use additional benefits, policy changes would only increase costs. Restructuring Medicare is usually proposed in the context of a budget, with the end goal of saving money. This would be achieved be making middle and upper income beneficiaries pay more out-of-pocket costs, with less in return, killing the purpose of redesigning Medicare. For example, policy changes are constantly brought up among policymakers, one of which proposes the implementation of a single co-insurance rate, which would up the costs to beneficiaries. <span class="red-span">The Centers for Medicare and Medicaid Services (CMS)</span> Innovation Center conducts tests on these types of policies to assure a desirable experience for Medicare beneficiaries. CMS gets some of its ideas from the beneficiaries themselves, by having them submit theirs online.
+                <amp-img src="./dest/images/pencil.png" alt="Premium Diagram" class="section-content__text-image-box-image block-image" width="600" height="200">
+                </p>
+              </section>
+            </amp-accordion>
+          </div>
+
+          <!-- section 2 -->
+
+          <section class="main-section" data-section-id="3">
+              <h3 class="section-header font-change">Lesser Known Facts and Happenings in Medicare<span class="section-anchor-target" id="section-3"></span></h3>
+              <div class="section-content">
+                  <p class="section-content__standard-text font-change">Medicare has been around for over half a century. It has undergone various changes, some of them more obscure than others. Here are a few components of Medicare that you should know when enrolling.</p>
+                  <ol class="section-content__fact-list">
+                      <li class="section-content__fact-list-item font-change">Cutbacks</li>
+                      <div class="section-content__fact-list-description">
+                          <p class="section-content__standard-text font-change">In December 2014, Medicare implemented cutbacks on nonemergency ambulance services in 3 states: New Jersey, Pennsylvania and South Carolina. This 3-year pilot program was developed due to the rise in fraudulent transportation operators, who had increased the number of nonemergency ambulance uses. The pilot program seeks to cut down on fraud and abuse. Thus, it approves nonemergency ambulance coverage to only those who are completely bedridden.</p>
+                      </div>
+                      <li class="section-content__fact-list-item font-change">Reasons Why Medicare Is So Expensive</li>
+                      <div class="section-content__fact-list-description">
+                          <div class="section-content__text-image-box section-03">
+                              <div class="section-content__text-image-box-text-column">
+                                  <p class="section-content__standard-text font-change">Those interested in Medicare may have noticed that Medicare raises prices as time progresses. The main reason behind Medicare’s rising costs is due to its demographics. Now that baby boomers are entering the age of retirement, there are more seniors dependent upon Medicare. With more beneficiaries tied to Medicare, it has a wider net to cover. The Medicare system partially holds the blame for increasing costs, as doctors and hospitals capitalize on the fact that Medicare will pay for expensive drugs and procedures.</p>
+                              </div>
+                              <amp-img src="./dest/images/money.png" alt="Premium Diagram" class="section-content__text-image-box-image" width="200" height="200">
+                          </div>
+                      </div>
+                      <li class="section-content__fact-list-item font-change">Lack Of Information Can Lead To Poor Decisions</li>
+                      <div class="section-content__fact-list-description">
+                          <p class="section-content__standard-text font-change">Medicare is not always direct in its communication with its beneficiaries or soon-to-be enrollees. Based on the Kaiser Family Foundation 2012 survey, over a third of low income seniors were unaware of Medicare’s enrollment periods.</p>
+                          <div class="section-content__text-image-box image-left section-03">
+                              <amp-img src="./dest/images/pie-chart.png" alt="Premium Diagram" class="section-content__text-image-box-image" width="300" height="120">
+                              <div class="section-content__text-image-box-text-column">
+                                  <p class="section-content__standard-text font-change">Education on Medicare is problematic for many seniors. With little knowledge on the many facets of Medicare, seniors often make ill-informed decisions, several of which can cost them.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <li class="section-content__fact-list-item font-change">Gaps In Coverage</li>
+                      <div class="section-content__fact-list-description">
+                          <p class="section-content__standard-text font-change">Traditional Medicare, or Medicare Part A and Part B, do not provide any type of safety net for financial havoc due to a catastrophic disease. This has not changed in 50 years. Claim rejections are also higher than rejections by private insurance companies. Medicare also does not cover supplies like eyeglasses, dentures and copies of X-rays. It doesn’t cover services like routine eye exams, foot care, long term care, dental checkups and cleanings.</p>
+                          <amp-img src="./dest/images/pencil.png" alt="Premium Diagram" class="section-content__text-image-box-image block-image" width="320" height="100">
+                      </div>
+                  </ol>
+              </div>
+          </section>
+
+        <section class="main-section" data-section-id="4">
+            <h3 class="section-header font-change">The Truth About Medicare Supplement<span class="section-anchor-target" id="section-4"></span></h3>
+            <div class="section-content">
+                <p class="section-content__standard-text font-change">Medicare Supplement is a private insurance policy that beneficiaries can obtain from private companies. Medicare Supplement can help pay for some of the healthcare costs and services that Original Medicare doesn’t cover. Essentially, Medicare Supplement fills the gaps of original Medicare for a more comprehensive health insurance. Some of the services and costs Medicare Supplement covers include:</p>
+                <ul class="section-content__medicare-supplement-icons">
+                    <li class="section-content__medicare-supplement-icon" data-text="Medical Care Abroad">
+                        <amp-img src="./dest/images/section-5-image-1.png" alt="placeholder+image" class="section-content__medicare-supplement-icon-image" height="200" width="200">
+
+                    </li>
+                    <li class="section-content__medicare-supplement-icon" data-text="Skilled Nursing Facility Costs">
+                        <amp-img src="./dest/images/section-5-image-2.png" alt="placeholder+image" class="section-content__medicare-supplement-icon-image" height="200" width="200">
+
+                    </li>
+                    <li class="section-content__medicare-supplement-icon" data-text="Your Co-insurance">
+                        <amp-img src="./dest/images/section-5-image-3.png" alt="placeholder+image" class="section-content__medicare-supplement-icon-image" height="200" width="200">
+
+                    </li>
+                    <li class="section-content__medicare-supplement-icon" data-text="Your Medicare">
+                        <amp-img src="./dest/images/section-5-image-4.png" alt="placeholder+image" class="section-content__medicare-supplement-icon-image" height="200" width="200">
+
+                    </li>
+                    <li class="section-content__medicare-supplement-icon" data-text="Hospital Expenses">
+                        <amp-img src="./dest/images/section-5-image-5.png" alt="placeholder+image" class="section-content__medicare-supplement-icon-image" height="200" width="200">
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- footer -->
+
+        <div class="footer-alerts">
+          <p class="footer__paragraph">By clicking the button above, you provide your signature expressly
+          consenting to receive communications via live telephone, an automatic dialing system, pre-recorded message, or text message from United Medicare Advisors or its subsidiaries, affiliates, or agents at the telephone number provided including your wireless number (if provided) as well as via email regarding your health insurance options including Medicare Supplement Insurance, Medicare Advantage, and/or Medicare Part D. Your consent to receive communications in this way is not required as a condition of purchasing any goods or services. Your telephone company may impose additional charges for text messages, and you may revoke your consent at any time through any reasonable manner. You acknowledge that you have read and understand all of the <a href="#" class="footer__link">Terms and Conditions</a> and <a href="#" class="footer__link">Privacy Policy</a> of this site.</p>
+          <p class="footer__paragraph"><a href="#" class="footer__link">UnitedMedicareAdvisors.com</a> is an online resource for Medicare Supplement, Medicare Advantage, Medicare Part D, and health insurance information, along with competitive quotes from some of the nation's top insurance companies. Our mission is to help individuals by offering the best available plans at prices that are affordable.</p>
+          <p class="footer__paragraph">United Medicare Advisors and UnitedMedicareAdvisors.com is wholly owned and operated by Spring Insurance Solutions LLC. Spring Insurance Solutions and their divisions are licensed to sell insurance products in the following states: AL, AZ, AR, CO, CT, DE, FL, GA, ID, IL, IN, IA, KS, KY, LA, ME, MD, MI, MN, MS, MO, MT, NE, NV, NH, NJ, NM, NC, ND, OH, OK, OR, PA, SC, SD, TN, TX, UT, VT, VA, WA, DC, WV, WI, WY.</p>
+          <p class="footer__paragraph">To provide you with easy-to-understand information about your Medicare options, UnitedMedicareAdvisors.com researched government websites and publications, such as those of Medicare.gov, 2016 Choosing a Medigap Policy, and Medicare and You 2017. Neither Spring Insurance Solutions LLC nor UnitedMedicareAdvisors.com are associated with or endorsed by these government websites and publications. We believe the sources we use to provide information are reliable. However, we do not guarantee or warrant the accuracy of this information.</p>
+          <p class="footer__paragraph"><a href="#" class="footer__link">UnitedMedicareAdvisors.com</a> provides the material on this website for informational purposes only.</p>
+          <p class="footer__paragraph">The contents of this website are subject to change without notice. If you would like to find more information about the Government Medicare program please visit the Official US Government Site for People with Medicare located at <a href="#" class="footer__link">www.medicare.gov.</a></p>
+          <p class="footer__paragraph">Should you call the number listed above, you will speak with a licensed sales agent who can answer your questions and provide information about Medicare Supplement Insurance plans; this agent may also be able to connect you with a licensed sales agent to discuss Medicare Advantage and/or Medicare Part D plans. Neither United Medicare Advisors nor its agents are connected with or endorsed by the U.S. government or the federal Medicare program.</p>
+        </div>
+        <footer class="footer__copyright-block">
+          <p class="footer__paragraph">Copyright © 2017 United Medicare Advisors. All rights reserved.</p>
+        </footer>
+
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

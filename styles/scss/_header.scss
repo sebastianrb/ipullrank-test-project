@@ -3,16 +3,25 @@
     position: relative;
     padding-top: $sticky-nav-height + 50;
 
+    @media screen and (max-width: $breakpoint-600) {
+        padding-top: 100px;
+    }
+
     //breadcrumb text
     .header__breadcrumb {
         width: 93%;
         margin: 20px auto;
         font-size: 1.1em;
+
+        @media screen and (max-width: $breakpoint-750) {
+            font-size: 1em;
+        }
     }
 
     .header__breadcrumb-text > a {
         color: $accent;
         transition: all .1s;
+
         &:hover {
             color: $red-accent;
         }
@@ -40,6 +49,10 @@
         padding: 10px 40px;
         @include flex-row(nowrap, space-between, center);
         box-shadow: 0 4px 12px -4px rgba(0,0,0,.40);
+
+        @media screen and (max-width: $breakpoint-850) {
+            top: 2px;
+        }
     }
 
     .header__sticky-nav-content.pushed {
@@ -50,6 +63,10 @@
         width: 140px;
         min-width: 100px;
         height: auto;
+
+        @media screen and (max-width: $breakpoint-850) {
+            width: 120px
+        }
     }
 
     .header__sticky-nav-icon-image {
@@ -60,6 +77,48 @@
         @include flex-row(nowrap, center, center);
         font-family: Roboto-Regular;
         min-width: 655px;
+        transition: all .5s;
+
+        @media screen and (max-width: $breakpoint-850) {
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            background: white;
+            left: 0px;
+            height: 175px;
+            border-bottom: 7px solid $accent;
+            padding: 25px 35px;
+            flex-flow: column wrap;
+            min-width: 0;
+            overflow: hidden;
+            background: transparentize($footer-color, .02);
+            font-size: 1.1em;
+        }
+
+        @media screen and (max-width: $breakpoint-500) {
+            height: auto;
+        }
+    }
+
+    .top-menu-collapsed {
+        @media screen and (max-width: $breakpoint-850) {
+            left: -150%;
+        }
+    }
+
+    .header__sticky-nav-list--mobile-button {
+        display: none;
+        transition: $standard-transition;
+
+        @media screen and (max-width: $breakpoint-850) {
+            display: block;
+            font-size: 1.7em;
+            cursor: pointer;
+
+            &:hover {
+                color: $accent;
+            }
+        }
     }
 
     .header__sticky-nav-list-item:not(.search) {
@@ -67,9 +126,17 @@
         font-weight: 500;
         transition: background-color .3s, color .3s;
 
+        @media screen and (max-width: $breakpoint-850) {
+            margin: 0;
+        }
+
         &:hover {
             background-color: $accent;
             color: white;
+
+            @media screen and (max-width: $breakpoint-850) {
+                background: transparent;
+            }
         }
     }
 
@@ -77,6 +144,11 @@
         margin-left: 30px;
         cursor: pointer;
         transition: color .3s;
+
+        @media screen and (max-width: $breakpoint-500) {
+            margin: 0;
+        }
+
         &:hover {
             color: $accent;
         }
@@ -106,6 +178,10 @@
 
     .header__phone-bar-text {
         color: white;
+
+        @media screen and (max-width: $breakpoint-850) {
+            color: $header-background-1;
+        }
     }
 
     .fa-phone {
@@ -155,6 +231,12 @@
         font-size: 2.5em;
         color: white;
         letter-spacing: 1px;
+        text-align: center;
+
+        @media screen and (max-width: $breakpoint-750) {
+            font-size: 2.2em;
+            padding: 0 25px;
+        }
     }
 
     .header__divider {
@@ -171,5 +253,11 @@
         font-size: 1.1em;
         opacity: .8;
         font-family: Roboto-Regular;
+
+        @media screen and (max-width: $breakpoint-750) {
+            font-size: 1em;
+            width: 70%;
+        }
     }
 }
+

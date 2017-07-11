@@ -4,6 +4,10 @@
     border: $standard-border;
     margin-bottom: 8px;
     min-width: 600px;
+
+    @media screen and (max-width: $breakpoint-850) {
+        min-width: 100px;
+    }
 }
 
 .section-content__accordion-content {
@@ -28,7 +32,11 @@
 .section-content__accordion-header-text {
     background: $light-blue-accent;
     color: $table-dark-blue;
-    width: calc(100% - 190px)
+    width: calc(100% - 190px);
+
+    @media screen and (max-width: $breakpoint-600) {
+        font-size: .95em;
+    }
 }
 
 .section-content__accordion-header-expand-button {
@@ -88,6 +96,12 @@
     text-align: center;
     color: darken($gray-accent, 20%);
     margin-bottom: 20px;
+
+    @media screen and (max-width: $breakpoint-750) {
+        width: 100%;
+        float: none;
+        height: auto;
+    }
 }
 
 .section-content__accordion-content-right-column {
@@ -97,6 +111,17 @@
     padding: 0 40px 30px 20px;
     line-height: $standard-line-height;
     font-family: Roboto-Light;
+
+    @media screen and (max-width: $breakpoint-750) {
+        width: 100%;
+        float: none;
+        padding: 0 20px;
+    }
+
+    @media screen and (max-width: $breakpoint-600) {
+        padding: 0 15px;
+        font-size: .9em;
+    }
 }
 
 .red-span {
@@ -114,6 +139,24 @@
 .section-content__medicare-costs-table--accordion {
     margin: 20px 0 0;
     font-family: Roboto-Bold;
+
+    @media screen and (max-width: $breakpoint-750) {
+         margin: 20px auto 10px;
+    }
+
+    @media screen and (max-width: $breakpoint-600) {
+        font-size: .9em;
+
+        th, td {
+            width: auto;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-500) {
+        font-size: .8em;
+    }
+
     th, td {
         width: 150px;
         text-align: center;
