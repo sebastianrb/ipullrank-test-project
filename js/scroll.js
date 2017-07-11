@@ -13,7 +13,8 @@
     var sections = Array.from(document.querySelectorAll(".main-section"));
     //create object of section offsets
     var sectionOffsets = makeSectionOffsetObject(sections);
-    var stickyMenuHeight = 200;
+    var stickyMenuHeightOffset = 190;
+    var phoneBarFoldedDown = 320;
 
 
     //throttle scrolling and handle sticky menu
@@ -60,7 +61,7 @@
         }
 
         //format header
-        if($(window).scrollTop() > 300) {
+        if($(window).scrollTop() > phoneBarFoldedDown) {
             stickyheader.classList.add("pushed");
         } else {
             stickyheader.classList.remove("pushed");
@@ -85,7 +86,7 @@
         var offsetObject = {};
 
         sections.forEach( function(element, index) {
-            offsetObject[index] = $(element).offset().top - stickyMenuHeight;
+            offsetObject[index] = $(element).offset().top - stickyMenuHeightOffset;
         });
 
         // console.log(offsetObject);

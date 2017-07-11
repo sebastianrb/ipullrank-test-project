@@ -1,17 +1,6 @@
 (function() {
 
-
-    //add classes to each element affected by font resize
-
-    //using jQuery, programmatically add data attribute to those element storing their base font size
-
-    //create a data attribute on the body that stores the current font growth factor
-
-    //when user clicks a button, find that factor in the array, go to next or previous, and affect all the element by that factor multiplied by their original size
-
-    //when user gets ot start or end of array, disable relevant button
-
-    //cache variables
+     //cache variables
     var body = document.body;
     var fontButtons = document.querySelector(".main-sidebar__text-size-adjust-buttons");
     var fontSizes = [".8", ".85", ".9", "1", "1.1", "1.2", "1.3"];
@@ -58,7 +47,6 @@
 
                 //do magic
                 var growthFactor = parseFloat(body.getAttribute("data-font-growth-factor"));
-                console.log(growthFactor);
                 changingElements.forEach( function(element, index) {
                     // statements
                 });
@@ -71,9 +59,9 @@
                 }
             }
 
-            //do magic
+            //resize the fonts
             var growthFactor = parseFloat(body.getAttribute("data-font-growth-factor"));
-            console.log(growthFactor);
+
             changingElements.forEach( function(element, index) {
                 var baseFontSize = parseFloat(element.getAttribute("data-base-font-size"));
                 $(element).css('font-size', baseFontSize * growthFactor + "px");

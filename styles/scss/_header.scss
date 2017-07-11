@@ -48,7 +48,7 @@
 
     .header__sticky-nav-icon {
         width: 140px;
-        min-width: 120px;
+        min-width: 100px;
         height: auto;
     }
 
@@ -59,6 +59,7 @@
     .header__sticky-nav-list {
         @include flex-row(nowrap, center, center);
         font-family: Roboto-Regular;
+        min-width: 655px;
     }
 
     .header__sticky-nav-list-item:not(.search) {
