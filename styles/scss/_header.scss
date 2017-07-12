@@ -12,6 +12,7 @@
         width: 93%;
         margin: 20px auto;
         font-size: 1.1em;
+        font-weight: 900;
 
         @media screen and (max-width: $breakpoint-750) {
             font-size: 1em;
@@ -124,10 +125,14 @@
     .header__sticky-nav-list-item:not(.search) {
         margin-left: 10px;
         font-weight: 500;
-        transition: background-color .3s, color .3s;
+        transition: background-color .2s, color .2s;
 
         @media screen and (max-width: $breakpoint-850) {
             margin: 0;
+        }
+
+        &.menu-selected {
+            color: $accent;
         }
 
         &:hover {
@@ -210,7 +215,7 @@
     .header__phone-bar-text,
     .header__social-bar {
         opacity: .9;
-        font-size: .95em;
+        font-size: .91em;
     }
 
     //main header content styles

@@ -8,13 +8,6 @@
         var firstAccordionHeight = $accordions.first().find(".section-content__accordion-content-right-column").outerHeight(true);
         var firstFactDivHeight = $accordions.first().find(".section-content__accordion-content-left-column").outerHeight(true);
 
-        //set first accordion content height so it can animate
-        // if(window.innerWidth > 750) {
-        //     $accordions.first().find(".section-content__accordion-content").css('height', firstAccordionHeight + 10 + "px");
-        // } else {
-        //     $accordions.first().find(".section-content__accordion-content").css('height', firstAccordionHeight + firstFactDivHeight + 10 + "px");
-        // }
-
         //style the expand/collapse buttons dynamically based on the state of the accordion content for each accordion
         $('.section-content__accordion').each(function(index, element) {
             var $article = $(element).find(".section-content__accordion-content");
@@ -29,13 +22,17 @@
 
 
         //add event listener for expanding accordions
-        $accordionButtons.on('click', function(event) {
-            event.preventDefault();
+        $accordionButtons.on('click', handleAccordions);
 
+        //handler function
+        function handleAccordions(event) {
+            event.preventDefault();
+            console.log("Handler fired");
             //expand or collapse article
             //get article height dynamically
 
             if(window.innerWidth > 750) {
+                console.log(this);
                 var $article = $(this).closest(".section-content__accordion").find(".section-content__accordion-content");
                 var articleHeight = $article.find(".section-content__accordion-content-right-column").outerHeight(true);
 
@@ -76,8 +73,7 @@
             } else {
                 $verticalBar.addClass("bar-flat");
             }
-
-        });
+        }
 
     });
 

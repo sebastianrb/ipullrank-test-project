@@ -54,7 +54,8 @@ a {
   .header .header__breadcrumb {
     width: 93%;
     margin: 20px auto;
-    font-size: 1.1em; }
+    font-size: 1.1em;
+    font-weight: 900; }
     @media screen and (max-width: 750px) {
       .header .header__breadcrumb {
         font-size: 1em; } }
@@ -140,10 +141,12 @@ a {
   .header .header__sticky-nav-list-item:not(.search) {
     margin-left: 10px;
     font-weight: 500;
-    transition: background-color .3s, color .3s; }
+    transition: background-color .2s, color .2s; }
     @media screen and (max-width: 850px) {
       .header .header__sticky-nav-list-item:not(.search) {
         margin: 0; } }
+    .header .header__sticky-nav-list-item:not(.search).menu-selected {
+      color: #2eb1ff; }
     .header .header__sticky-nav-list-item:not(.search):hover {
       background-color: #2eb1ff;
       color: white; }
@@ -201,7 +204,7 @@ a {
   .header .header__phone-bar-text,
   .header .header__social-bar {
     opacity: .9;
-    font-size: .95em; }
+    font-size: .91em; }
   .header .header__content {
     background-image: url("../images/banner-image.jpg");
     background-repeat: no-repeat;
@@ -259,7 +262,7 @@ a {
   background: rgba(46, 177, 255, 0.3);
   font-size: 1.1em;
   margin: 0 0 30px;
-  line-height: 25px; }
+  line-height: 28px; }
   .main-content__intro-text p {
     opacity: .9; }
 
@@ -268,7 +271,7 @@ a {
   line-height: 25px;
   font-family: Roboto-Light;
   font-weight: 900;
-  font-size: 1.05em; }
+  font-size: 1.08em; }
 
 .section-header {
   width: 80%;
@@ -285,7 +288,7 @@ a {
     bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
-    background: #2eb1ff;
+    background: rgba(46, 177, 255, 0.6);
     opacity: .5; }
 
 .section-anchor-target {
@@ -348,7 +351,7 @@ a {
   align-items: center;
   position: relative; }
   .main-sidebar__text-size-adjust .main-sidebar__text-size-adjust-button {
-    background: rgba(188, 188, 188, 0.7);
+    background: rgba(188, 188, 188, 0.6);
     border: none;
     margin: 10px;
     color: #2eb1ff;
@@ -360,10 +363,10 @@ a {
     cursor: pointer;
     transition: all 0.2s; }
     .main-sidebar__text-size-adjust .main-sidebar__text-size-adjust-button:hover {
-      background: rgba(173, 173, 173, 0.7);
+      background: rgba(160, 160, 160, 0.6);
       transform: scale(1.05); }
     .main-sidebar__text-size-adjust .main-sidebar__text-size-adjust-button.button-disabled {
-      background: rgba(173, 173, 173, 0.7);
+      background: rgba(173, 173, 173, 0.6);
       cursor: auto;
       opacity: .4;
       transform: scale(1); }
@@ -374,7 +377,7 @@ a {
   top: 100%;
   left: 50%;
   width: 200px;
-  background: #2eb1ff;
+  background: #009dfa;
   color: white;
   padding: 15px;
   text-align: center;
@@ -431,11 +434,13 @@ a {
     background: lightgray; }
 
 .main-sidebar__in-this-article-item.article-selected a {
-  background: lightgray; }
+  background: rgba(211, 211, 211, 0.7);
+  color: #424242; }
 
 .in-this-article-header {
   background: black;
-  color: white; }
+  color: white;
+  font-size: 1.1em; }
 
 .main-sidebar__social-share {
   display: flex;
@@ -554,7 +559,7 @@ a {
         width: 100%;
         float: none; } }
   .section-content__text-image-box .section-content__text-image-box-image {
-    width: 320px;
+    width: 305px;
     float: right;
     margin: 5px; }
     @media screen and (max-width: 750px) {
@@ -569,7 +574,7 @@ a {
 .section-content__blue-box {
   padding: 15px 30px;
   background: rgba(46, 177, 255, 0.3);
-  font-size: .9em;
+  font-size: .95em;
   margin: 0 0 10px;
   line-height: 25px; }
 
@@ -611,6 +616,9 @@ table {
   @media screen and (max-width: 500px) {
     table {
       font-size: .85em; } }
+  @media screen and (max-width: 400px) {
+    table {
+      font-size: .70em; } }
 
 .section-content__medicare-costs-table th, .section-content__medicare-costs-table td {
   width: 150px;
@@ -685,6 +693,9 @@ table {
   flex: 1 1 auto;
   max-width: 100px;
   min-width: 100px; }
+  @media screen and (max-width: 500px) {
+    .section-content__accordion-header-myth-box {
+      min-width: 70px; } }
 
 .section-content__accordion-header-text {
   background: rgba(46, 177, 255, 0.3);
@@ -693,6 +704,10 @@ table {
   @media screen and (max-width: 600px) {
     .section-content__accordion-header-text {
       font-size: .95em; } }
+  @media screen and (max-width: 500px) {
+    .section-content__accordion-header-text {
+      font-size: .85em;
+      width: calc(100% - 150px); } }
 
 .section-content__accordion-header-expand-button {
   background: rgba(46, 177, 255, 0.3);
@@ -705,6 +720,9 @@ table {
   max-width: 90px;
   min-width: 90px;
   transition: all 0.2s; }
+  @media screen and (max-width: 500px) {
+    .section-content__accordion-header-expand-button {
+      min-width: 80px; } }
   .section-content__accordion-header-expand-button:hover {
     background: rgba(0, 141, 225, 0.3); }
 
@@ -739,6 +757,10 @@ table {
   background: #2eb1ff;
   position: absolute;
   transition: all 0.2s; }
+  @media screen and (max-width: 500px) {
+    .section-content__accordion-header-expand-line-horizontal,
+    .section-content__accordion-header-expand-line-vertical {
+      height: 3px; } }
 
 .section-content__accordion-header-expand-line-vertical {
   transform: rotateZ(90deg); }
@@ -749,7 +771,7 @@ table {
   min-width: 100px;
   height: 100%;
   text-align: center;
-  color: rgba(160, 160, 160, 0.7);
+  color: rgba(160, 160, 160, 0.6);
   margin-bottom: 20px; }
   @media screen and (max-width: 750px) {
     .section-content__accordion-content-left-column {
@@ -763,7 +785,8 @@ table {
   min-height: 100px;
   padding: 0 40px 30px 20px;
   line-height: 25px;
-  font-family: Roboto-Light; }
+  font-family: Roboto-Light;
+  font-size: 1.05em; }
   @media screen and (max-width: 750px) {
     .section-content__accordion-content-right-column {
       width: 100%;
@@ -797,6 +820,9 @@ table {
   @media screen and (max-width: 500px) {
     .section-content__medicare-costs-table--accordion {
       font-size: .8em; } }
+  @media screen and (max-width: 400px) {
+    .section-content__medicare-costs-table--accordion {
+      font-size: .75em; } }
   .section-content__medicare-costs-table--accordion th, .section-content__medicare-costs-table--accordion td {
     width: 150px;
     text-align: center; }
@@ -907,7 +933,7 @@ table {
   align-items: center; }
 
 .section-content__medicare-supplement-icon {
-  margin: 20px 26px 45px;
+  margin: 20px 30px 45px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -935,13 +961,13 @@ table {
   position: relative; }
   @media screen and (max-width: 750px) {
     .footer-alerts {
-      padding: 40px 30px; } }
+      padding: 35px; } }
   @media screen and (max-width: 600px) {
     .footer-alerts {
       font-size: .9em; } }
   .footer-alerts .footer__paragraph {
-    margin: 20px 0;
-    font-size: .9em;
+    margin: 10px 0 20px;
+    font-size: .88em;
     line-height: 25px; }
   .footer-alerts .footer__link {
     color: #2eb1ff;
@@ -965,4 +991,5 @@ footer {
   position: relative; }
   footer .footer__paragraph {
     opacity: .7;
-    font-size: .9em; }
+    font-size: .9em;
+    text-align: center; }

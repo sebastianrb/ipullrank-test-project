@@ -2,26 +2,21 @@
 
 $font-color: #424242;
 $main-background-color: white;
-
 $footer-background-color: #454545;
 $footer-color: #e3e3e3;
-
 $header-color: #e3e3e3;
 $header-background-1: #043a4f;
 $nav-bar-item-color: #444444;
-
 $accent: #2eb1ff;
-$gray-accent: rgba(211, 211, 211, 0.7);
+$gray-accent: rgba(211, 211, 211, 0.6);
 $red-accent: darken(#ef3936, 15%);
 $orange-accent: #f5a403;
 $light-blue-accent: transparentize($accent, .7);
-
 
 $google-color: #d50f25;
 $twitter-color: #0084b4;
 $facebook-color: #5d75af;
 $linkedin-color: #86888A;
-
 
 $table-light-blue: #155479;
 $table-dark-blue: #04394f;
@@ -36,6 +31,8 @@ $breakpoint-850: 850px;
 $breakpoint-750: 750px;
 $breakpoint-600: 600px;
 $breakpoint-500: 500px;
+$breakpoint-400: 400px;
+
 
 //measurements
 $sticky-nav-height: 75px;

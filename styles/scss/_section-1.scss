@@ -9,6 +9,10 @@ table {
     @media screen and (max-width: $breakpoint-500) {
         font-size: .85em;
     }
+
+    @media screen and (max-width: $breakpoint-400) {
+        font-size: .70em;
+    }
 }
 
 .section-content__medicare-costs-table {

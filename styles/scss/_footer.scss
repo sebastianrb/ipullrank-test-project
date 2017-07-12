@@ -7,7 +7,7 @@
     position: relative;
 
     @media screen and (max-width: $breakpoint-750) {
-        padding: 40px 30px;
+        padding: 35px;
     }
 
     @media screen and (max-width: $breakpoint-600) {
@@ -15,8 +15,8 @@
     }
 
     .footer__paragraph {
-        margin: 20px 0;
-        font-size: .9em;
+        margin: 10px 0 20px;
+        font-size: .88em;
         line-height: 25px;
     }
 
@@ -46,5 +46,6 @@ footer {
     .footer__paragraph {
         opacity: .7;
         font-size: .9em;
+        text-align: center;
     }
 }
