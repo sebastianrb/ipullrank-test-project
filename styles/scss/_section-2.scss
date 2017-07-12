@@ -55,6 +55,7 @@
     max-width: 90px;
     min-width: 90px;
     transition: $standard-transition;
+    position: relative;
 
     @media screen and (max-width: $breakpoint-500) {
         min-width: 80px;
@@ -155,7 +156,7 @@
 //table
 .section-content__medicare-costs-table--accordion {
     margin: 20px 0 0;
-    font-family: Roboto-Bold;
+    font-family: Roboto-Regular;
 
     @media screen and (max-width: $breakpoint-750) {
          margin: 20px auto 10px;
@@ -163,6 +164,7 @@
 
     @media screen and (max-width: $breakpoint-600) {
         font-size: .9em;
+        font-family: Roboto-Bold;
 
         th, td {
             width: auto;
@@ -181,6 +183,11 @@
     th, td {
         width: 150px;
         text-align: center;
+    }
+
+    td {
+        height: 130px;
+        color: $table-font;
     }
 
     thead {

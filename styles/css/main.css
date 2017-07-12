@@ -663,7 +663,8 @@ table {
     color: white; }
   .section-content__medicare-costs-table tbody tr td:not(:first-child) {
     padding: 5px 10px;
-    font-size: .9em; }
+    font-size: .9em;
+    color: #696868; }
 
 .section-content__medicare-costs-table tbody tr:nth-child(even) td:nth-child(odd) {
   background: #fdfdfd; }
@@ -736,7 +737,8 @@ table {
   cursor: pointer;
   max-width: 90px;
   min-width: 90px;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  position: relative; }
   @media screen and (max-width: 500px) {
     .section-content__accordion-header-expand-button {
       min-width: 80px; } }
@@ -824,13 +826,14 @@ table {
 
 .section-content__medicare-costs-table--accordion {
   margin: 20px 0 0;
-  font-family: Roboto-Bold; }
+  font-family: Roboto-Regular; }
   @media screen and (max-width: 750px) {
     .section-content__medicare-costs-table--accordion {
       margin: 20px auto 10px; } }
   @media screen and (max-width: 600px) {
     .section-content__medicare-costs-table--accordion {
-      font-size: .9em; }
+      font-size: .9em;
+      font-family: Roboto-Bold; }
       .section-content__medicare-costs-table--accordion th, .section-content__medicare-costs-table--accordion td {
         width: auto;
         text-align: center; } }
@@ -843,6 +846,9 @@ table {
   .section-content__medicare-costs-table--accordion th, .section-content__medicare-costs-table--accordion td {
     width: 150px;
     text-align: center; }
+  .section-content__medicare-costs-table--accordion td {
+    height: 130px;
+    color: #696868; }
   .section-content__medicare-costs-table--accordion thead {
     border-bottom: 10px solid #f5a403; }
   .section-content__medicare-costs-table--accordion thead tr {

@@ -17,7 +17,7 @@
     //create object of section offsets
     var sectionOffsets = makeSectionOffsetObject(sections);
     //offsets and breakpoints
-    var stickyMenuHeightOffset = 190;
+    var stickyMenuHeightOffset = 200;
     var phoneBarFoldedDown = 320;
     var stickyMenuBreakpoint = 950
 
