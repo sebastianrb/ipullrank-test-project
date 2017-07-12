@@ -1,6 +1,8 @@
 (function() {
     "use strict";
 
+    //code the functionality around the top and side nav menus on mobile
+
     //cache variables
     var topMobileMenuButton = document.querySelector(".header__sticky-nav-list--mobile-button");
     var topMobileMenu = document.querySelector(".header__sticky-nav-list");

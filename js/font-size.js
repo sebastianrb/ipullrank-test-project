@@ -1,6 +1,8 @@
 (function() {
     "use strict";
 
+    //code the font increase/decrease button functionality
+
     //cache variables
     var body = document.body;
     var fontButtons = document.querySelector(".main-sidebar__text-size-adjust-buttons");

@@ -1,6 +1,8 @@
 (function() {
     "use strict";
 
+    //code the scroll functionality as it affects the sidebar and other components
+
     //cache variables
     var sidebar = document.querySelector(".main-sidebar");
     var sidebarMobileMenuButton = document.querySelector(".mobile-sidebar-button");
@@ -80,10 +82,7 @@
     function handleResize(event) {
         sidebarHeight = sidebar.offsetHeight;
         sidebarOffsetTop = $(sidebar).offset().top;
-
         sectionOffsets = makeSectionOffsetObject(sections);
-        // console.log(sectionOffsets);
-
         if(window.innerWidth > 950) {
             sidebar.classList.remove("mobile-sidebar-expanded");
             sidebarMobileMenuButton.classList.remove("mobile-sidebar-button-activated");
@@ -94,12 +93,9 @@
     //helper functions
     function makeSectionOffsetObject(sections) {
         var offsetObject = {};
-
         sections.forEach( function(element, index) {
             offsetObject[index] = $(element).offset().top - stickyMenuHeightOffset;
         });
-
-        // console.log(offsetObject);
         return offsetObject;
     }
 

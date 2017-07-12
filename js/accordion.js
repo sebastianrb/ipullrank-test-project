@@ -1,6 +1,8 @@
 (function() {
     "use strict";
 
+    //code the expand and collapse accordion behavior
+
     $(document).ready(function() {
 
         //cache variables
