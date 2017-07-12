@@ -1,7 +1,7 @@
 (function() {
     "use strict";
 
-    //get height of sidebar and sidebar offset
+    //cache variables
     var sidebar = document.querySelector(".main-sidebar");
     var sidebarMobileMenuButton = document.querySelector(".mobile-sidebar-button");
     var sidebarHeight = sidebar.offsetHeight;

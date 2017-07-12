@@ -2,35 +2,19 @@
     "use strict";
 
     $(document).ready(function() {
-        //cache dom nodes
+
+        //cache variables
         var $accordionButtons = $(".section-content__accordion-header-expand-button");
         var $accordions = $(".section-content__accordion");
-        var firstAccordionHeight = $accordions.first().find(".section-content__accordion-content-right-column").outerHeight(true);
-        var firstFactDivHeight = $accordions.first().find(".section-content__accordion-content-left-column").outerHeight(true);
-
-        //style the expand/collapse buttons dynamically based on the state of the accordion content for each accordion
-        $('.section-content__accordion').each(function(index, element) {
-            var $article = $(element).find(".section-content__accordion-content");
-            var $verticalBar = $(element).find('.section-content__accordion-header-expand-line-vertical');
-
-            if($article.hasClass("accordion-collapsed")) {
-                $verticalBar.removeClass("bar-flat");
-            } else {
-                $verticalBar.addClass("bar-flat");
-            }
-        });
-
 
         //add event listener for expanding accordions
         $accordionButtons.on('click', handleAccordions);
 
-        //handler function
+        //accordion handler function
         function handleAccordions(event) {
             event.preventDefault();
-            console.log("Handler fired");
-            //expand or collapse article
-            //get article height dynamically
 
+            //handle accordion heights differently based on the styling of the accordion
             if(window.innerWidth > 750) {
                 console.log(this);
                 var $article = $(this).closest(".section-content__accordion").find(".section-content__accordion-content");
@@ -66,7 +50,7 @@
                 }
             }
 
-            //change button
+            //change accordion button based on whether the accordion is expanded or collapsed
             var $verticalBar = $(this).find('.section-content__accordion-header-expand-line-vertical');
             if($verticalBar.hasClass("bar-flat")) {
                 $verticalBar.removeClass("bar-flat");
