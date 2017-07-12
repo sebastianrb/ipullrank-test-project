@@ -108,15 +108,18 @@
           .header .header__breadcrumb-text > a:hover {
             color: #c91310; }
         .header .header__sticky-nav {
-          position: absolute;
+          position: fixed;
           top: 0;
           width: 100%;
           max-width: 1150px;
           opacity: 1;
           z-index: 1000; }
+          @media screen and (max-width: 850px) {
+            .header .header__sticky-nav {
+              position: absolute;} }
         .header .header__sticky-nav-content {
           height: 75px;
-          position: absolute;
+          position: fixed;
           top: 40px;
           max-width: 1150px;
           background: white;
@@ -131,6 +134,7 @@
           @media screen and (max-width: 850px) {
             .header .header__sticky-nav-content {
               top: 2px;
+              position: absolute;
               display: flex;
               flex-flow: row nowrap;
               justify-content: center;
@@ -779,7 +783,7 @@
                 margin-bottom: 20px; }
 
               .section-content__fact-list-item:last-of-type + .section-content__fact-list-description .section-content__standard-text {
-                margin-bottom: 0; }
+                margin-bottom: 20px; }
 
               .section-content__fact-list-description {
                 padding-left: 20px;
@@ -825,6 +829,7 @@
                   .section-content__text-image-box.image-left .section-content__text-image-box-text-column {
                     width: 100%;
                     float: none; } }
+
 
 
 
@@ -897,7 +902,8 @@
                     position: relative; }
                     footer .footer__paragraph {
                       opacity: .7;
-                      font-size: .9em; }
+                      font-size: .9em;
+                      text-align: center;}
 
 
     </style>
@@ -1086,7 +1092,7 @@
                       </div>
                       <li class="section-content__fact-list-item font-change">Gaps In Coverage</li>
                       <div class="section-content__fact-list-description">
-                          <p class="section-content__standard-text font-change">Traditional Medicare, or Medicare Part A and Part B, do not provide any type of safety net for financial havoc due to a catastrophic disease. This has not changed in 50 years. Claim rejections are also higher than rejections by private insurance companies. Medicare also does not cover supplies like eyeglasses, dentures and copies of X-rays. It doesn’t cover services like routine eye exams, foot care, long term care, dental checkups and cleanings.</p>
+                          <p class="section-content__standard-text font-change add-bottom-margin">Traditional Medicare, or Medicare Part A and Part B, do not provide any type of safety net for financial havoc due to a catastrophic disease. This has not changed in 50 years. Claim rejections are also higher than rejections by private insurance companies. Medicare also does not cover supplies like eyeglasses, dentures and copies of X-rays. It doesn’t cover services like routine eye exams, foot care, long term care, dental checkups and cleanings.</p>
                           <amp-img src="./dest/images/pencil.png" alt="Premium Diagram" class="section-content__text-image-box-image block-image" width="320" height="100">
                       </div>
                   </ol>
